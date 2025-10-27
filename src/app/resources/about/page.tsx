@@ -2,65 +2,14 @@
 import Link from "next/link";
 import { JSX } from "react/jsx-runtime";
 
-type SideLink = { href: string; label: string; active?: boolean };
-
-const SIDEBAR_LINKS: SideLink[] = [
-  { href: "/about", label: "Who We Are", active: true },
-  { href: "/faqs", label: "FAQ" },
-  { href: "/contact", label: "Have a Question?" },
-  { href: "/resources/trademark-search-guide", label: "Trademark Search Guide" },
-  { href: "/services/trademark-registration", label: "Register a Trademark" },
-  // Removed: Trademark Office Action (per request)
-];
-
 export default function AboutPage(): JSX.Element {
   return (
     <main className="bg-white font-[var(--font-body)] text-[15px] leading-7 text-[#333333]">
       {/* Page Container */}
       <section className="mx-auto w-full max-w-[1200px] px-4 py-10 md:py-14">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-          {/* Sidebar */}
-          <aside className="md:col-span-4 lg:col-span-3">
-            <div className="space-y-6 md:sticky md:top-24">
-              {/* In-page nav */}
-              <nav aria-label="About navigation" className="rounded-2xl border border-[#E0E0E0] bg-white">
-                <ul className="overflow-hidden rounded-2xl">
-                  {SIDEBAR_LINKS.map((l) => (
-                    <li key={l.href}>
-                      <Link
-                        href={l.href}
-                        aria-current={l.active ? "page" : undefined}
-                        className={[
-                          "block px-5 py-4 text-sm transition-colors",
-                          l.active
-                            ? "border-l-4 border-[#6c4cb1] bg-[#6c4cb1]/10 font-semibold text-[#6c4cb1]"
-                            : "text-[#333333] hover:bg-[#F5F5F5]",
-                        ].join(" ")}
-                      >
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-
-              {/* CTA card */}
-              <div className="rounded-2xl border border-[#E0E0E0] bg-[#F5F5F5] p-6 text-center">
-                <p className="font-[var(--font-heading)] text-[15px] text-[#212121]">
-                  Free Trademark Search
-                </p>
-                <Link
-                  href="/services/free-trademark-search"
-                  className="mt-4 inline-block rounded-full bg-[#6c4cb1] px-5 py-2 text-sm font-semibold text-white transition hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6c4cb1]"
-                >
-                  Search Now
-                </Link>
-              </div>
-            </div>
-          </aside>
-
+        <div className="flex flex-col">
           {/* Main content */}
-          <article className="md:col-span-8 lg:col-span-9">
+          <article>
             <header className="mb-6">
               <h1 className="text-3xl font-[var(--font-heading)] tracking-tight text-[#212121] md:text-[34px]">
                 About Legal Mark Experts

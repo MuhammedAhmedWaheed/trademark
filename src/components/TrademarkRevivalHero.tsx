@@ -18,23 +18,42 @@ export default function TrademarkRevivalHero() {
               right paperwork.
             </p>
           </div>
-          <form className="flex flex-col gap-3 rounded-[24px] border border-[#E0E0E0] bg-white p-3 shadow-[0_24px_90px_-70px_rgba(33,33,33,0.55)] sm:flex-row sm:items-center">
-            <label htmlFor="revival-serial" className="sr-only">
-              Enter 8-digit serial number
-            </label>
-            <input
-              id="revival-serial"
-              type="text"
-              placeholder="Enter 8-digit serial number"
-              className="h-12 w-full flex-1 rounded-[20px] border border-transparent bg-[#F5F5F5] px-4 text-sm text-[#212121] placeholder:text-[#9e9e9e] transition focus:border-[#6c4cb1] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#6c4cb1]/20 sm:h-14 sm:px-6 sm:text-base font-[var(--font-body)]"
-            />
-            <button
-              type="button"
-              className="inline-flex h-12 items-center justify-center rounded-[20px] bg-[#6c4cb1] px-6 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3aa4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:h-14 sm:px-7 sm:text-base font-[var(--font-heading)]"
-            >
-              Revive My Trademark
-            </button>
-          </form>
+          <div className="mt-6 flex flex-wrap gap-6">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+              <div className="leading-tight">
+                <p className="text-sm font-semibold text-gray-900">Shopper Approved</p>
+                <p className="text-xs sm:text-sm text-gray-500">Rated 4.7/5 by 1000+ users</p>
+              </div>
+              <div className="mt-1 sm:mt-0">
+                <div className="inline-flex items-center justify-center rounded-md bg-white px-2 py-1 ring-1 ring-gray-200">
+                  <Image
+                    src="/logo1.png"
+                    alt="Shopper Approved"
+                    width={120}
+                    height={40}
+                    className="h-7 w-auto object-contain sm:h-8"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+              <div className="leading-tight">
+                <p className="text-sm font-semibold text-gray-900">Trustpilot</p>
+                <p className="text-xs sm:text-sm text-gray-500">Rated 4.6/5 by 1000+ users</p>
+              </div>
+              <div className="mt-1 sm:mt-0">
+                <div className="inline-flex items-center justify-center rounded-md bg-white px-2 py-1 ring-1 ring-gray-200">
+                  <Image
+                    src="/logo2.png"
+                    alt="Trustpilot"
+                    width={110}
+                    height={40}
+                    className="h-7 w-auto object-contain sm:h-8"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="relative w-full lg:max-w-lg">
           <div className="overflow-hidden rounded-[32px] border border-[#E0E0E0] bg-[#F5F5F5] p-4 shadow-[0_32px_100px_-70px_rgba(33,33,33,0.55)]">

@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from 'react';
 
-type AssetType = 'name' | 'logo' | 'slogan' | 'sound';
+type AssetType = 'name' | 'logo' | 'slogan';
 
 type AssetOption = {
   id: AssetType;
@@ -48,16 +48,6 @@ const assetOptions: AssetOption[] = [
     fieldAs: 'textarea',
     fieldRows: 3,
     placeholder: 'e.g., Secure Every Mark.',
-  },
-  {
-    id: 'sound',
-    title: 'Sound',
-    description: 'Unique sounds identifying your brand',
-    fieldLabel: 'Upload an audio signature',
-    fieldName: 'soundFile',
-    fieldType: 'file',
-    accept: 'audio/*',
-    helperText: 'MP3, WAV, or AIFF files up to 10 MB.',
   },
 ];
 
@@ -253,6 +243,12 @@ export function TrademarkIntakeForm() {
           required
         />
         <Input
+          label="Where can we see this mark online? (website URL)"
+          name="websiteUrl"
+          type="url"
+          placeholder="https://www.yourbrand.com"
+        />
+        <Input
           label="Are you using it in commerce yet? (optional)"
           name="currentUse"
           placeholder="Share how and where the mark is currently in use, if applicable."
@@ -264,9 +260,8 @@ export function TrademarkIntakeForm() {
       <fieldset className="grid gap-4">
         <legend className="text-sm font-semibold uppercase tracking-wide text-[#6c4cb1]">Tell Us More (optional)</legend>
         <Input
-          label="Anything else we should know?"
+          label="Please provide a brief description of the nature of your business."
           name="additionalNotes"
-          placeholder="Share office actions, deadlines, or special instructions."
           as="textarea"
           rows={5}
         />

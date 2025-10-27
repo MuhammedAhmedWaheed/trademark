@@ -1,3 +1,4 @@
+import Link from "next/link";
 const plans = [
   {
     name: "Basic Monitor",
@@ -86,12 +87,14 @@ export default function TrademarkMonitoringPlans() {
                   per month + any applicable filing fees
                 </p>
               </div>
-              <button
-                type="button"
-                className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] font-[var(--font-heading)] ${plan.buttonColor}`}
-              >
-                {plan.highlight ? "Choose Standard" : `Choose ${plan.name.split(" ")[0]}`}
-              </button>
+              <Link href="/contact">
+                <button
+                  type="button"
+                  className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] font-[var(--font-heading)] ${plan.buttonColor}`}
+                >
+                  {plan.highlight ? "Choose Standard" : `Choose ${plan.name.split(" ")[0]}`}
+                </button>
+              </Link>
               <div className="space-y-3">
                 <p className="text-sm font-semibold text-[#212121] font-[var(--font-heading)]">
                   Includes:

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Search as SearchIcon } from "lucide-react";
 
 export default function FreeTrademarkSearchSimilar() {
   return (
@@ -33,23 +32,6 @@ export default function FreeTrademarkSearchSimilar() {
           <p className="text-sm leading-relaxed text-[#333333] sm:text-base font-[var(--font-body)]">
             Legal Mark Experts makes monitoring effortless with alerts and curated intel tailored to the marks and industries you care about most.
           </p>
-
-          <form className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
-            <div className="flex flex-1 items-center rounded-full border border-[#e0e0e0] bg-white px-4 py-3 shadow-[0_26px_70px_-60px_rgba(33,33,33,0.38)] sm:py-3.5">
-              <SearchIcon className="mr-3 h-5 w-5 text-[#6c4cb1]" strokeWidth={1.8} />
-              <input
-                type="text"
-                placeholder="Enter owner name e.g. Nike"
-                className="w-full border-none bg-transparent text-sm text-[#212121] outline-none placeholder:text-[#8d8fa3] sm:text-base"
-              />
-            </div>
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/35 transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:px-10 sm:py-3.5"
-            >
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </section>

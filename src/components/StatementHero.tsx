@@ -15,22 +15,8 @@ export default function StatementHero() {
           evidence of using your mark to the USPTO after you receive a Notice of Allowance.
         </p>
 
-        {/* Input + Button */}
-        <div className="flex flex-col sm:flex-row gap-3">
-          <input
-            type="text"
-            placeholder="Enter your serial number"
-            className="border border-gray-300 rounded-lg px-4 py-3 w-full sm:w-2/3 
-                       focus:outline-none focus:ring-2 focus:ring-[#6c4cb1] 
-                       placeholder-gray-400 text-[#212121]"
-          />
-          <button className="bg-[#6c4cb1] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all">
-            File Statement of Use
-          </button>
-        </div>
-
         {/* Ratings */}
-        <div className="flex flex-wrap gap-6 mt-6">
+        <div className="mt-6 flex flex-wrap gap-6">
           {/* Shopper Approved */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2">
             <div className="leading-tight">

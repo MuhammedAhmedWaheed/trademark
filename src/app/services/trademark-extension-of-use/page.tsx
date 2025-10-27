@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { ChevronDown, CalendarDays } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 
 export default function ExtensionOfUsePage() {
@@ -65,60 +65,44 @@ export default function ExtensionOfUsePage() {
             which gives you more time to register your trademark. Start now!
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            <input
-              type="text"
-              placeholder="Enter your serial number"
-              className="border border-gray-300 rounded-lg px-4 py-3 w-full sm:w-2/3 focus:outline-none focus:ring-2 focus:ring-[#6c4cb1]"
-            />
-            <button className="bg-[#6c4cb1] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all">
-              File Extension of Use
-            </button>
+          <div className="mt-6 flex flex-wrap gap-6">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+              <div className="leading-tight">
+                <p className="text-sm font-semibold text-gray-900">Shopper Approved</p>
+                <p className="text-xs sm:text-sm text-gray-500">Rated 4.7/5 by 1000+ users</p>
+              </div>
+              <div className="mt-1 sm:mt-0">
+                <div className="inline-flex items-center justify-center rounded-md bg-white px-2 py-1 ring-1 ring-gray-200">
+                  <Image
+                    src="/logo1.png"
+                    alt="Shopper Approved"
+                    width={120}
+                    height={40}
+                    className="h-7 w-auto object-contain sm:h-8"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+              <div className="leading-tight">
+                <p className="text-sm font-semibold text-gray-900">Trustpilot</p>
+                <p className="text-xs sm:text-sm text-gray-500">Rated 4.6/5 by 1000+ users</p>
+              </div>
+              <div className="mt-1 sm:mt-0">
+                <div className="inline-flex items-center justify-center rounded-md bg-white px-2 py-1 ring-1 ring-gray-200">
+                  <Image
+                    src="/logo2.png"
+                    alt="Trustpilot"
+                    width={110}
+                    height={40}
+                    className="h-7 w-auto object-contain sm:h-8"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
 
-{/* Ratings + logos */}
-<div className="flex flex-wrap gap-6 mt-6">
-  {/* Shopper Approved */}
-  <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-    {/* Text first on mobile */}
-    <div className="leading-tight">
-      <p className="text-sm font-semibold text-gray-900">Shopper Approved</p>
-      <p className="text-xs sm:text-sm text-gray-500">Rated 4.7/5 by 1000+ users</p>
-    </div>
-    {/* Logo under text on mobile; neat badge so it doesn’t look squished */}
-    <div className="mt-1 sm:mt-0">
-      <div className="inline-flex items-center justify-center rounded-md ring-1 ring-gray-200 bg-white px-2 py-1">
-        <Image
-          src="/logo1.png"
-          alt="Shopper Approved"
-          width={120}
-          height={40}
-          className="h-7 w-auto sm:h-8 object-contain"
-        />
-      </div>
-    </div>
-  </div>
-  </div>
-
-  {/* Trustpilot */}
-  <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-    <div className="leading-tight">
-      <p className="text-sm font-semibold text-gray-900">Trustpilot</p>
-      <p className="text-xs sm:text-sm text-gray-500">Rated 4.6/5 by 1000+ users</p>
-    </div>
-    <div className="mt-1 sm:mt-0">
-      <div className="inline-flex items-center justify-center rounded-md ring-1 ring-gray-200 bg-white px-2 py-1">
-        <Image
-          src="/logo2.png"
-          alt="Trustpilot"
-          width={110}
-          height={40}
-          className="h-7 w-auto sm:h-8 object-contain"
-        />
-      </div>
-    </div>
-  </div>
-</div>
+        </div>
 
         <div className="relative md:w-1/2 flex justify-center">
           <Image

@@ -72,7 +72,7 @@ export default function TrademarkRevivalTimeline({
 
             <div>
               <Link
-                href="/trademark-revival/start"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-xl bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-[0_20px_45px_-28px_rgba(108,76,177,0.8)] transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1]"
               >
                 Get Started

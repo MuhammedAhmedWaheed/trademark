@@ -6,6 +6,7 @@ import ServicesShowcase from '../components/ServicesShowcase';
 import Testimonials from '../components/Testimonials';
 import WhyRegistrationMatters from '../components/WhyRegistrationMatters';
 import FAQ from '../components/FAQ';
+import Form from '../components/Form';
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       <ServicesShowcase />
       <WhyRegistrationMatters />
       <Testimonials />
+      <Form/>
       <FAQ />
     </div>
   )

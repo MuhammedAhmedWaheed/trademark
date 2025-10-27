@@ -5,13 +5,12 @@ import { getEmailConfig } from "@/lib/email";
 
 const MAX_UPLOAD_BYTES = 10 * 1024 * 1024; // 10 MB
 
-type AssetType = "name" | "logo" | "slogan" | "sound";
+type AssetType = "name" | "logo" | "slogan";
 
 const assetLabels: Record<AssetType, string> = {
   name: "Name",
   logo: "Logo",
   slogan: "Slogan",
-  sound: "Sound",
 };
 
 type Attachment = {
@@ -42,6 +41,7 @@ export async function POST(request: Request) {
       .toString()
       .trim();
     const currentUse = (formData.get("currentUse") ?? "").toString().trim();
+    const websiteUrl = (formData.get("websiteUrl") ?? "").toString().trim();
     const additionalNotes = (formData.get("additionalNotes") ?? "")
       .toString()
       .trim();
@@ -147,39 +147,6 @@ export async function POST(request: Request) {
           break;
         }
 
-        case "sound": {
-          const soundFile = formData.get("soundFile");
-          if (!(soundFile instanceof File) || soundFile.size === 0) {
-            return NextResponse.json(
-              {
-                success: false,
-                error: "Sound file upload is required when Sound is selected.",
-              },
-              { status: 400 }
-            );
-          }
-          if (soundFile.size > MAX_UPLOAD_BYTES) {
-            return NextResponse.json(
-              {
-                success: false,
-                error: "Sound file is larger than 10 MB.",
-              },
-              { status: 413 }
-            );
-          }
-          const arrayBuffer = await soundFile.arrayBuffer();
-          attachments.push({
-            filename: soundFile.name || "sound-upload",
-            content: Buffer.from(arrayBuffer),
-            contentType: soundFile.type || undefined,
-          });
-          assetDetails.push({
-            type: assetType,
-            summary: `Sound file attached (${soundFile.type || "unknown type"})`,
-          });
-          break;
-        }
-
         default:
           assetDetails.push({
             type: assetType,
@@ -225,6 +192,7 @@ export async function POST(request: Request) {
       <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Goods & Services:</strong></p>
       <p>${goodsServices.replace(/\n/g, "<br/>")}</p>
+      <p><strong>Website URL:</strong> ${websiteUrl || "Not provided"}</p>
       <p><strong>Current Use:</strong></p>
       <p>${currentUse ? currentUse.replace(/\n/g, "<br/>") : "Not provided"}</p>
       <p><strong>Assets to Protect:</strong></p>
@@ -242,6 +210,9 @@ Phone: ${phone}
 
 Goods & Services:
 ${goodsServices}
+
+Website URL:
+${websiteUrl || "Not provided"}
 
 Current Use:
 ${currentUse || "Not provided"}

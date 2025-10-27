@@ -20,39 +20,6 @@ export default function ComprehensiveTrademarkHero() {
             </p>
           </div>
 
-          <div className="w-full rounded-[30px] border border-[#e0e0e0] bg-[#f5f5f5] p-4 shadow-[0_24px_80px_-65px_rgba(33,33,33,0.4)] sm:p-5">
-            <form className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <label htmlFor="search-mark-input" className="sr-only">
-                Enter your mark name
-              </label>
-              <div className="relative flex-1">
-                <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#9e9e9e]">
-                  <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden="true">
-                    <path
-                      d="m17 17-3.5-3.5m1.5-4a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
-                <input
-                  id="search-mark-input"
-                  type="text"
-                  placeholder="Enter your mark name"
-                  className="h-12 w-full rounded-[22px] border border-transparent bg-white pl-11 pr-4 text-sm text-[#212121] placeholder:text-[#9e9e9e] transition focus:border-[#6c4cb1] focus:outline-none focus:ring-2 focus:ring-[#6c4cb1]/20 sm:h-14 sm:text-base font-[var(--font-body)]"
-                />
-              </div>
-              <button
-                type="button"
-                className="inline-flex h-12 items-center justify-center rounded-[22px] bg-[#6c4cb1] px-6 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3f96] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:h-14 sm:px-8 sm:text-base font-[var(--font-heading)]"
-              >
-                Get Search Report
-              </button>
-            </form>
-          </div>
-
           <div className="flex flex-wrap items-center gap-4">
             <div className="flex items-center">
               <div className="flex h-16 w-16 items-center justify-center">

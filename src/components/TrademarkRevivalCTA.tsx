@@ -20,7 +20,7 @@ export default function TrademarkRevivalCTA() {
         </p>
         <div className="mt-8 flex justify-center">
           <Link
-            href="/trademark-revival/start"
+            href="/trademark-registration-form"
             className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-8 py-3 text-sm font-semibold text-white shadow-[0_16px_35px_-25px_rgba(108,76,177,0.8)] transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1]"
           >
             Revive Your Trademark
