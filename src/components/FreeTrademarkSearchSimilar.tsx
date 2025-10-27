@@ -6,30 +6,16 @@ export default function FreeTrademarkSearchSimilar() {
     <section className="bg-white py-16 sm:py-20 lg:py-24">
       <div className="mx-auto flex w-full max-w-6xl flex-col-reverse gap-12 px-4 sm:px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
         <div className="relative flex flex-1 justify-center">
-          <div className="absolute inset-0 -z-10 hidden rounded-[48px] bg-[#f3edff] blur-3xl lg:block" />
           <div className="relative w-full max-w-[560px]">
-            <div className="relative overflow-hidden rounded-[36px] border border-[#ede8fb] bg-white shadow-[0_54px_130px_-78px_rgba(33,33,33,0.45)]">
+            <div className="relative aspect-[1120/928] overflow-hidden rounded-[36px]">
               <Image
-                src="/trademarkreg1.jpg"
-                alt="Dashboard preview of competitor trademark filings"
-                width={1120}
-                height={720}
-                className="h-full w-full object-cover"
+                src="/freetrademark3.png"
+                alt="Competitor trademark search workflow showcasing filings"
+                fill
+                className="object-cover"
                 priority
                 unoptimized
               />
-            </div>
-
-            <div className="absolute -left-6 top-10 hidden max-w-[180px] rounded-3xl border border-white bg-white p-4 shadow-xl shadow-[#6c4cb1]/20 sm:block">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6c4cb1] font-[var(--font-heading)]">Status</p>
-              <p className="mt-1 text-sm font-semibold text-[#212121] font-[var(--font-heading)]">Snapchat</p>
-              <p className="text-xs font-medium text-[#e05840]">Abandoned</p>
-            </div>
-
-            <div className="absolute -right-6 top-1/2 hidden max-w-[190px] -translate-y-1/2 rounded-3xl border border-white bg-white p-4 shadow-xl shadow-[#6c4cb1]/20 sm:block">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6c4cb1] font-[var(--font-heading)]">Live</p>
-              <p className="mt-1 text-sm font-semibold text-[#212121] font-[var(--font-heading)]">Apple Airtag</p>
-              <p className="text-xs font-medium text-[#4c9c59]">Active filing</p>
             </div>
           </div>
         </div>

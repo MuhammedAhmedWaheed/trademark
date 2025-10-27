@@ -28,7 +28,7 @@ export default function TrademarkAttorneyAdvisement() {
               </p>
 
               <Link
-                href="/contact"
+                href="/trademark-registration-form"
                 className="inline-flex min-w-[160px] items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/30 transition hover:translate-y-[-1px] hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:min-w-[180px] sm:px-7 sm:py-3.5"
               >
                 Start My Application

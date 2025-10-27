@@ -3,12 +3,70 @@
 
 import { Mail, MessageSquare, Phone, MapPin, Send } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
 
 export default function ContactPage(): JSX.Element {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [feedback, setFeedback] = useState("");
+
+  const resetFeedback = useCallback(() => {
+    if (status !== "idle") {
+      setStatus("idle");
+      setFeedback("");
+    }
+  }, [status]);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(form);
+    const payload = {
+      name: (formData.get("name") ?? "").toString().trim(),
+      email: (formData.get("email") ?? "").toString().trim(),
+      phone: (formData.get("phone") ?? "").toString().trim(),
+      subject: (formData.get("subject") ?? "").toString().trim(),
+      message: (formData.get("message") ?? "").toString().trim(),
+    };
+
+    setStatus("loading");
+    setFeedback("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const data = (await response.json().catch(() => null)) as { success?: boolean; error?: string } | null;
+
+      if (!response.ok || !data?.success) {
+        const message =
+          data?.error ??
+          "We couldn't send your message right now. Please try again or email support@legalmarkexperts.com.";
+        setStatus("error");
+        setFeedback(message);
+        return;
+      }
+
+      setStatus("success");
+      setFeedback("Thanks! We'll get back to you shortly.");
+      form.reset();
+    } catch (error) {
+      console.error("Failed to submit contact form", error);
+      setStatus("error");
+      setFeedback("We couldn't send your message. Check your connection and try again.");
+    }
+  };
 
   return (
     <main className="bg-white font-[var(--font-body)] text-[#333333]">
@@ -105,13 +163,7 @@ export default function ContactPage(): JSX.Element {
               Send us a message
             </h2>
 
-            <form
-              className="mt-6 space-y-5"
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubmitted(true);
-              }}
-            >
+            <form className="mt-6 space-y-5" onSubmit={handleSubmit} onChange={resetFeedback} noValidate>
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                 <Field label="Name" id="name" required>
                   <input
@@ -162,15 +214,22 @@ export default function ContactPage(): JSX.Element {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#6c4cb1] px-6 py-3 font-[var(--font-heading)] text-sm text-white transition hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6c4cb1]"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#6c4cb1] px-6 py-3 font-[var(--font-heading)] text-sm text-white transition hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6c4cb1] disabled:cursor-not-allowed disabled:opacity-60"
+                disabled={status === "loading"}
               >
                 <Send className="h-4 w-4" />
-                Send Message
+                {status === "loading" ? "Sending..." : "Send Message"}
               </button>
 
-              {submitted && (
-                <p role="status" className="text-sm text-[#6c4cb1]">
-                  Thanks! We&apos;ll get back to you shortly.
+              {status === "success" && feedback && (
+                <p role="status" className="rounded-xl border border-[#bbf7d0] bg-[#f0fdf4] px-4 py-3 text-sm text-[#166534]">
+                  {feedback}
+                </p>
+              )}
+
+              {status === "error" && feedback && (
+                <p role="alert" className="rounded-xl border border-[#fecaca] bg-[#fef2f2] px-4 py-3 text-sm text-[#b91c1c]">
+                  {feedback}
                 </p>
               )}
             </form>

@@ -78,15 +78,16 @@ export default function ComprehensiveTrademarkHero() {
         <div className="relative w-full lg:max-w-lg">
           <div className="absolute -left-6 -top-6 hidden h-24 w-24 rounded-full bg-[#f0e9ff] blur-2xl lg:block" aria-hidden />
           <div className="absolute -right-3 bottom-8 hidden h-20 w-20 rounded-full bg-[#e4dbff] blur-2xl lg:block" aria-hidden />
-          <div className="relative rounded-[40px] border border-[#e0e0e0] bg-[#f5f5f5] p-6 shadow-[0_40px_120px_-80px_rgba(33,33,33,0.55)] sm:p-8">
-            <div className="overflow-hidden rounded-[26px] bg-white">
+          <div className="relative rounded-[40px] shadow-[0_40px_120px_-80px_rgba(33,33,33,0.55)] sm:p-8">
+            <div className="relative overflow-hidden rounded-[32px]">
               <Image
-                src="/comprehensivesearch.png"
-                alt="Trademark search preview showing live, pending, and dead results"
+                src="/freetrademark2.png"
+                alt="Comprehensive trademark search dashboard preview"
                 width={560}
                 height={520}
                 className="h-auto w-full object-cover"
                 priority
+                unoptimized
               />
             </div>
           </div>

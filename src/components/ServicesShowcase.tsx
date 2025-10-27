@@ -54,7 +54,7 @@ export default function ServicesShowcase() {
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#6c4cb1]">
               Our Services
             </p>
-            <h2 className="mt-4 text-3xl text-[#1b1b3a] sm:text-4xl font-[var(--font-heading)]">
+            <h2 className="mt-4 text-3xl text-[#212121] sm:text-4xl font-[var(--font-heading)]">
               What Can Legal Mark Experts Do for Your Brand?
             </h2>
 
@@ -79,14 +79,14 @@ export default function ServicesShowcase() {
                     </span>
                     <span
                     className={`max-w-[220px] text-sm leading-snug font-[var(--font-heading)] ${
-                        isActive ? "text-[#1b1b3a]" : "text-[#9195a8]"
+                        isActive ? "text-[#212121]" : "text-[#9195a8]"
                       }`}
                     >
                       {service.title}
                     </span>
                     <span
                     className={`mt-3 h-0.5 w-12 rounded-full md:w-16 ${
-                        isActive ? "bg-[#f7a142]" : "bg-transparent"
+                        isActive ? "bg-[#6c4cb1]" : "bg-transparent"
                       }`}
                     />
                   </button>
@@ -95,7 +95,7 @@ export default function ServicesShowcase() {
             </div>
 
             <div className="mt-12 max-w-2xl">
-              <p className="text-base leading-relaxed text-[#4b4b63] font-[var(--font-body)]">
+              <p className="text-base leading-relaxed text-[#333333] font-[var(--font-body)]">
                 {active.description}
               </p>
               <Link
@@ -110,7 +110,7 @@ export default function ServicesShowcase() {
 
             <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[420px]">
-              <div className="rounded-[32px] border border-[#d7dcff] bg-[#f3f5ff] p-8">
+              <div className="rounded-[32px] border border-[#d7dcff] bg-[#f5f5f5] p-8">
                 <div className="rounded-3xl border border-[#dad4ff] bg-white p-5">
                   <Image
                     src="/services-showcase-illustration.svg"

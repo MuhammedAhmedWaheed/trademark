@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const benefits = [
   {
     title: "New Trademark Filings Can Conflict with Yours",
@@ -118,12 +120,12 @@ export default function TrademarkMonitoringBenefits() {
                 </p>
               </div>
               <div className="mt-auto">
-                <a
-                  href="#monitoring-contact"
+                <Link
+                  href="/contact"
                   className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-5 py-2 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3aa4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] font-[var(--font-heading)]"
                 >
                   Get Started
-                </a>
+                </Link>
               </div>
             </div>
           ))}

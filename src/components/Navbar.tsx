@@ -46,8 +46,9 @@ const SERVICES_COL_3: NavItem[] = [
 ];
 
 const RESOURCES: IconNavItem[] = [
-  { label: "Blog", href: "/resources/blog", Icon: BookText },
   { label: "About Us", href: "/resources/about", Icon: Layers },
+  { label: "Blogs", href: "/resources/blog", Icon: BookText },
+  { label: "Trademark Categories", href: "/resources/trademark-categories", Icon: Layers },
 ];
 
 const COMPANY: IconNavItem[] = [
@@ -111,7 +112,7 @@ export default function Navbar() {
         scrolled ? "shadow-sm" : ""
       )}
     >
-      <nav className="mx-auto flex h-20 max-w-[1200px] items-center justify-between px-4">
+      <nav className="mx-auto flex h-26 max-w-[1200px] items-center justify-between px-4">
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2" aria-label="Homepage">
           <Image
@@ -119,7 +120,7 @@ export default function Navbar() {
             alt="Brand logo"
             width={140}
             height={120}
-            className="h-16 w-auto sm:h-20"
+            // className="h-16 w-auto sm:h-20"
             priority
           />
         </Link>
@@ -312,15 +313,17 @@ function TopLink({
 function MegaMenu() {
   return (
     <div className="overflow-hidden rounded-xl bg-white">
-      <div className="flex items-center justify-center gap-4 border-b border-[#e5e1f7] bg-[#f4f1ff] px-6 py-4">
-        <Image src="/logo.png" alt="Legal Mark Experts" width={56} height={56} className="h-10 w-auto" />
-        <div className="flex items-baseline gap-3 text-[#2f2474]">
-          <span className="text-sm font-medium uppercase tracking-[0.24em] text-[#7b71c4] whitespace-nowrap">
-            Protect your brand with
-          </span>
-          <span className="text-xl font-semibold whitespace-nowrap">Legal Mark Experts</span>
+        <div className="flex flex-col items-center justify-center gap-4 border-b border-[#e5e1f7] bg-[#f4f1ff] px-6 sm:flex-row sm:gap-6">
+          <Image src="/logo.png" alt="Legal Mark Experts" width={100} height={100} />
+          <div className="flex items-center gap-3 text-[#2f2474]">
+            <span className="text-[18px] font-semibold text-[#6c4cb1]">
+              Protect your brand with
+            </span>
+            <span className="text-[18px] font-semibold text-[#2f2474]">
+              Legal Mark Experts
+            </span>
+          </div>
         </div>
-      </div>
       <div className="grid grid-cols-1 gap-6 px-6 py-6 sm:grid-cols-3">
         <MenuColumn title="Register your trademark" items={SERVICES_COL_1} />
         <MenuColumn title="Post filing services" items={SERVICES_COL_2} />

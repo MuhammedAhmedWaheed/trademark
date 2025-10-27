@@ -10,7 +10,7 @@ export default function CeaseAndDesistCTA() {
           Take decisive action before infringement damages your brand. We’ll help you send a professionally drafted cease &amp; desist letter—quickly, affordably, and with attorney-backed confidence.
         </p>
         <a
-          href="#cease-contact"
+          href="/contact"
           className="group inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#6c4cb1] transition duration-300 hover:bg-[#F5F5F5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white font-[var(--font-heading)]"
         >
           Get Started

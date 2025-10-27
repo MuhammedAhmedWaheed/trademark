@@ -56,13 +56,13 @@ const BENEFITS: Benefit[] = [
 
 export default function WhyRegistrationMatters() {
   return (
-    <section className="bg-[#1b1b3a] py-16 text-white sm:py-20">
+    <section className="bg-[#f5f5f5] py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-[var(--font-heading)]">
+          <h2 className="text-3xl text-[#212121] sm:text-4xl font-[var(--font-heading)]">
             Why Trademark Registration Matters
           </h2>
-          <p className="mt-4 text-base text-[#d9ddff] sm:text-lg font-[var(--font-body)]">
+          <p className="mt-4 text-base text-[#333333] sm:text-lg font-[var(--font-body)]">
             Protect your brand, reputation, and future with a registered trademark.
           </p>
         </div>
@@ -71,15 +71,15 @@ export default function WhyRegistrationMatters() {
           {BENEFITS.map(({ title, description, Icon }) => (
             <div
               key={title}
-              className="flex h-full flex-col rounded-2xl border border-[#323366] bg-white/5 p-6 text-left backdrop-blur transition hover:border-[#6c4cb1] hover:bg-white/10"
+              className="flex h-full flex-col rounded-2xl border border-[#d9d3f2] bg-white p-6 text-left shadow-[0_18px_40px_-28px_rgba(108,76,177,0.3)] transition hover:-translate-y-1 hover:shadow-[0_24px_48px_-26px_rgba(108,76,177,0.35)]"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#f7a142]/20 text-[#f7a142]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#6c4cb1]/12 text-[#6c4cb1]">
                 <Icon className="h-6 w-6" />
               </div>
-              <h3 className="mt-4 text-lg text-white font-[var(--font-heading)]">
+              <h3 className="mt-4 text-lg text-[#212121] font-[var(--font-heading)]">
                 {title}
               </h3>
-              <p className="mt-2 text-sm text-[#d9ddff] leading-relaxed font-[var(--font-body)]">
+              <p className="mt-2 text-sm text-[#333333] leading-relaxed font-[var(--font-body)]">
                 {description}
               </p>
             </div>

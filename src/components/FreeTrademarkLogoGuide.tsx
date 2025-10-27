@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Search as SearchIcon, Sparkles } from "lucide-react";
 
 const STEPS = [
   {
@@ -54,26 +53,17 @@ export default function FreeTrademarkLogoGuide() {
         </div>
 
         <div className="relative flex flex-1 justify-center">
-          <div className="absolute inset-0 -z-10 rounded-[48px] bg-gradient-to-br from-[#eae3ff] via-white to-[#f3f5ff]" />
-          <div className="relative w-full max-w-[420px] rounded-[38px] bg-white p-6 shadow-[0_48px_120px_-78px_rgba(33,33,33,0.5)] sm:p-8">
-            <div className="relative aspect-[5/7] overflow-hidden rounded-[28px]">
+          <div className="relative w-full max-w-[460px]">
+            <div className="relative aspect-[1212/929] overflow-hidden rounded-[32px]">
               <Image
-                src="/trademarkreg1.jpg"
-                alt="Designer reviewing trademark logo results on phone"
+                src="/freetrademarkflow.png"
+                alt="Visual workflow showing trademark search process"
                 fill
-                sizes="(max-width: 640px) 360px, (max-width: 1024px) 400px, 420px"
+                sizes="(max-width: 640px) 360px, (max-width: 1024px) 420px, 460px"
                 className="object-cover"
                 priority
                 unoptimized
               />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0a0a0a]/40 via-transparent to-transparent" />
-            </div>
-
-            <div className="absolute -right-10 top-10 flex h-14 w-14 items-center justify-center rounded-full bg-[#6c4cb1] text-white shadow-[0_30px_60px_-40px_rgba(108,76,177,0.85)]">
-              <SearchIcon className="h-6 w-6" strokeWidth={1.8} />
-            </div>
-            <div className="absolute -left-8 bottom-12 hidden h-12 w-12 items-center justify-center rounded-full bg-white text-[#6c4cb1] shadow-[0_20px_50px_-34px_rgba(108,76,177,0.65)] sm:flex">
-              <Sparkles className="h-5 w-5" strokeWidth={1.6} />
             </div>
           </div>
         </div>

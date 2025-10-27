@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TrademarkIntakeForm } from "./TrademarkIntakeForm";
 
 export const metadata: Metadata = {
   title: "Trademark Registration Form | Legal Mark Experts",
@@ -60,149 +61,9 @@ export default function TrademarkRegistrationFormPage() {
             </p>
           </div>
 
-          <form className="grid gap-8 rounded-3xl border border-[#e4def8] bg-white p-6 shadow-lg sm:p-8 lg:p-10">
-            <fieldset className="grid gap-4 sm:grid-cols-2">
-              <legend className="text-sm font-semibold uppercase tracking-wide text-[#6c4cb1]">Contact Details</legend>
-              <Input label="Full Name" name="fullName" placeholder="Jane Smith" required />
-              <Input label="Company (optional)" name="company" placeholder="Legal Mark Holdings LLC" />
-              <Input label="Email Address" name="email" type="email" placeholder="you@company.com" required />
-              <Input label="Phone Number" name="phone" type="tel" placeholder="(555) 123-4567" required />
-            </fieldset>
-
-            <fieldset className="grid gap-4">
-              <legend className="text-sm font-semibold uppercase tracking-wide text-[#6c4cb1]">Trademark Information</legend>
-              <Input label="Trademark Name" name="markName" placeholder="Your brand name or slogan" required />
-              <Input
-                label="Goods & Services"
-                name="goodsServices"
-                placeholder="Describe the products or services sold under this mark"
-                as="textarea"
-                rows={4}
-                required
-              />
-              <Input
-                label="Current Use of the Mark"
-                name="currentUse"
-                placeholder="Describe how and where the mark is currently used in commerce"
-                as="textarea"
-                rows={4}
-              />
-            </fieldset>
-
-            <fieldset className="grid gap-4 sm:grid-cols-2">
-              <legend className="text-sm font-semibold uppercase tracking-wide text-[#6c4cb1]">Filing Preferences</legend>
-              <Input
-                label="Trademark Basis"
-                name="filingBasis"
-                placeholder="Section 1(a) - In Use or Section 1(b) - Intent to Use"
-              />
-              <Input
-                label="Target Filing Timeline"
-                name="timeline"
-                placeholder="Example: File within 30 days"
-              />
-              <Input
-                label="Specimen URL (if any)"
-                name="specimenUrl"
-                placeholder="https://example.com/product-page"
-                type="url"
-              />
-              <Input
-                label="USPTO Serial Number (if continuing an application)"
-                name="serialNumber"
-                placeholder="Enter serial number if applicable"
-              />
-            </fieldset>
-
-            <fieldset className="grid gap-4">
-              <legend className="text-sm font-semibold uppercase tracking-wide text-[#6c4cb1]">
-                Additional Notes
-              </legend>
-              <Input
-                label="Tell Us More"
-                name="notes"
-                placeholder="Share any office actions, deadlines, or special instructions we should know about."
-                as="textarea"
-                rows={5}
-              />
-              <label className="flex items-start gap-3 text-sm text-[#4b4b63]">
-                <input type="checkbox" name="subscribe" className="mt-1 h-4 w-4 rounded border-[#c5b8ef] text-[#6c4cb1]" />
-                <span>
-                  Keep me informed about trademark renewal deadlines, monitoring alerts, and Legal Mark Experts updates.
-                  You can opt out anytime.
-                </span>
-              </label>
-            </fieldset>
-
-            <div className="flex flex-col gap-3 rounded-2xl bg-[#f8f6ff] p-5 text-sm text-[#4b4b63] sm:flex-row sm:items-center sm:justify-between">
-              <p>
-                By submitting this form you agree to our{" "}
-                <a href="/company/terms" className="text-[#6c4cb1] underline-offset-2 hover:underline">
-                  Engagement Agreement
-                </a>{" "}
-                and{" "}
-                <a href="/company/privacy" className="text-[#6c4cb1] underline-offset-2 hover:underline">
-                  Privacy Policy
-                </a>
-                .
-              </p>
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
-              >
-                Submit Registration Request
-              </button>
-            </div>
-          </form>
+          <TrademarkIntakeForm />
         </div>
       </section>
     </main>
   );
 }
-
-type InputProps = {
-  label: string;
-  name: string;
-  placeholder?: string;
-  type?: string;
-  required?: boolean;
-  rows?: number;
-  as?: "input" | "textarea";
-};
-
-function Input({
-  label,
-  name,
-  placeholder,
-  type = "text",
-  required,
-  rows,
-  as = "input",
-}: InputProps) {
-  const shared =
-    "w-full rounded-2xl border border-[#d7cef6] bg-white px-4 py-3 text-sm text-[#212121] shadow-sm focus:border-[#6c4cb1] focus:outline-none focus:ring-2 focus:ring-[#d9d0f7]";
-
-  return (
-    <label className="grid gap-2 text-sm font-medium text-[#212121]">
-      <span>{label}</span>
-      {as === "textarea" ? (
-        <textarea
-          name={name}
-          placeholder={placeholder}
-          rows={rows ?? 4}
-          required={required}
-          className={`${shared} resize-y`}
-        />
-      ) : (
-        <input
-          name={name}
-          type={type}
-          placeholder={placeholder}
-          required={required}
-          className={shared}
-        />
-      )}
-    </label>
-  );
-}
-

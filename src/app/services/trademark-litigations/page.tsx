@@ -1,4 +1,5 @@
 import Litigation from "@/components/Litigation";
+import Link from "next/link";
 import Image from "next/image";
 import {
   Scale,
@@ -122,9 +123,12 @@ export default function LitigationPage() {
           ))}
         </div>
 
-        <button className="mt-12 bg-[#6c4cb1] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all shadow-md">
+        <Link
+          href="/contact"
+          className="mt-12 inline-flex items-center justify-center rounded-lg bg-[#6c4cb1] px-8 py-3 font-semibold text-white shadow-md transition-all hover:bg-[#5b3d9d]"
+        >
           Get Started
-        </button>
+        </Link>
       </section>
 
       {/* PRICING */}
@@ -209,9 +213,12 @@ export default function LitigationPage() {
         <p className="max-w-3xl mx-auto text-[#333] text-base md:text-lg leading-relaxed">
           Your trademark represents your hard work, reputation, and growth. If it’s being challenged or misused, now is the time to act. With the right legal support, you can defend your brand and move forward with confidence.
         </p>
-        <button className="mt-8 bg-[#6c4cb1] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all shadow-md">
+        <Link
+          href="/contact"
+          className="mt-8 inline-flex items-center justify-center rounded-lg bg-[#6c4cb1] px-8 py-3 font-semibold text-white shadow-md transition-all hover:bg-[#5b3d9d]"
+        >
           Start Now
-        </button>
+        </Link>
       </section>
     </main>
   );

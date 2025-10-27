@@ -7,21 +7,16 @@ export default function ComprehensiveTrademarkOverview() {
       <div className="pointer-events-none absolute bottom-[-140px] left-[-80px] h-72 w-72 rounded-full bg-[#6c4cb1]/10 blur-3xl" />
       <div className="relative mx-auto flex w-full max-w-6xl flex-col-reverse items-center gap-12 px-4 sm:px-6 lg:flex-row lg:items-center lg:gap-20">
         <div className="relative w-full max-w-lg lg:flex-1">
-          <div className="absolute left-6 top-2 h-20 w-20 rounded-full bg-white/70 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[32px] bg-white p-6 shadow-[0_32px_90px_-60px_rgba(33,33,33,0.55)]">
+          <div className="absolute left-6 top-2 h-20 w-20 rounded-full bg-white/40 blur-2xl" />
+          <div className="relative overflow-hidden rounded-[32px] shadow-[0_32px_90px_-60px_rgba(33,33,33,0.55)]">
             <Image
-              src="/hero-placeholder.svg"
-              alt="Mockup of a trademark search dashboard"
+              src="/comprehensive.png"
+              alt="Comprehensive trademark search dashboard preview"
               width={720}
               height={480}
               className="h-auto w-full object-contain"
+              priority
             />
-          </div>
-          <div className="absolute -bottom-14 -right-10 hidden sm:flex">
-            <div className="relative flex h-28 w-28 items-center justify-center rounded-full border-[10px] border-[#6c4cb1] bg-white shadow-[0_22px_60px_-48px_rgba(33,33,33,0.75)]">
-              <div className="h-10 w-10 rounded-full bg-[#6c4cb1]/10" />
-              <div className="absolute bottom-[-38px] right-[-6px] h-20 w-6 rounded-full bg-[#6c4cb1] shadow-[0_12px_24px_-18px_rgba(33,33,33,0.6)] rotate-45 origin-top" />
-            </div>
           </div>
         </div>
         <div className="w-full space-y-6 text-left lg:flex-1">

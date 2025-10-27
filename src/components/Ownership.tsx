@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Ownership() {
   return (
@@ -19,9 +20,12 @@ export default function Ownership() {
           attorneys.
         </p>
 
-        <button className="bg-[#6c4cb1] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all shadow-md">
+        <Link
+          href="/contact"
+          className="inline-flex items-center justify-center rounded-lg bg-[#6c4cb1] px-8 py-3 font-semibold text-white shadow-md transition-all hover:bg-[#5b3d9d]"
+        >
           Get Started
-        </button>
+        </Link>
 
         {/* Ratings Section */}
         <div className="flex flex-wrap gap-6 mt-8">

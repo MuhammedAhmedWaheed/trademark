@@ -1,5 +1,6 @@
 // app/ownership-transfer/page.tsx
 import Ownership from "@/components/Ownership";
+import Link from "next/link";
 import {
   FileSignature,
   Users2,
@@ -99,13 +100,13 @@ export default function OwnershipTransferPage() {
     ))}
   </div>
 
-  <button
+  <Link href="/contact"
     className="mt-10 bg-[#6c4cb1] text-white font-semibold px-8 py-3 rounded-lg shadow-lg 
                hover:bg-[#593a9b] focus:outline-none focus:ring-4 
                focus:ring-[#6c4cb1]/40 transition-all duration-200"
   >
     Get Started
-  </button>
+  </Link>
 </section>
 
 {/* WHY YOU SHOULD TRANSFER */}
@@ -227,11 +228,12 @@ export default function OwnershipTransferPage() {
             Make ownership official, avoid future complications, and protect your brand the right way.
             Just submit your details—we&apos;ll handle the rest from drafting to filing with the USPTO.
           </p>
-          <button className="mt-8 inline-flex items-center justify-center rounded-lg bg-[#6c4cb1] px-8 py-3 font-semibold text-white shadow-md hover:bg-[#5b3d9d] focus:outline-none focus:ring-4 focus:ring-[#6c4cb1]/30 transition">
+          <Link href="/contact" className="mt-8 inline-flex items-center justify-center rounded-lg bg-[#6c4cb1] px-8 py-3 font-semibold text-white shadow-md hover:bg-[#5b3d9d] focus:outline-none focus:ring-4 focus:ring-[#6c4cb1]/30 transition">
             Get Started
-          </button>
+          </Link>
         </div>
       </section>
     </main>
   );
 }
+

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   Search,
@@ -109,14 +110,14 @@ export default function RenewalServicesShowcase() {
   };
 
   return (
-    <section className="bg-white py-20 sm:py-24">
+    <section className="bg-[#f5f5f5] py-20 sm:py-24">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
         <header className="space-y-3 text-center">
-          <h2 className="text-3xl text-[#1b1b3a] sm:text-[2.5rem] font-[var(--font-heading)]">
+          <h2 className="text-3xl text-[#212121] sm:text-[2.5rem] font-[var(--font-heading)]">
             Full Service{" "}
             <span className="text-[#6c4cb1]">Trademark Renewal</span>
           </h2>
-          <p className="text-base text-[#4b4b63] sm:text-lg font-[var(--font-body)]">
+          <p className="text-base text-[#333333] sm:text-lg font-[var(--font-body)]">
             Renew your trademark to keep legal protection with guidance tailored for every renewal scenario.
           </p>
         </header>
@@ -193,28 +194,21 @@ export default function RenewalServicesShowcase() {
             className="space-y-6 text-center animate-fade-up lg:text-left"
           >
             <div className="space-y-3">
-              <h3 className="text-xl text-[#1b1b3a] sm:text-2xl font-[var(--font-heading)]">
+              <h3 className="text-xl text-[#212121] sm:text-2xl font-[var(--font-heading)]">
                 {activeStep.headline.split(activeStep.highlight)[0]}
                 <span className="text-[#6c4cb1]">{activeStep.highlight}</span>
                 {activeStep.headline.split(activeStep.highlight)[1]}
               </h3>
-              <p className="text-sm text-[#4b4b63] sm:text-base font-[var(--font-body)]">
+              <p className="text-sm text-[#333333] sm:text-base font-[var(--font-body)]">
                 {activeStep.description}
               </p>
             </div>
-            <button
-              type="button"
-              className={cn(
-                "mx-auto inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-[#1b1b3a] shadow-lg transition focus-visible:outline-2 focus-visible:outline-offset-2 lg:mx-0",
-                activeStep.key === "urgent"
-                  ? "bg-[#f2686b] text-white shadow-[#f2686b]/30 focus-visible:outline-[#f2686b]"
-                  : activeStep.key === "incontestability"
-                    ? "bg-[#6c4cb1] text-white shadow-[#6c4cb1]/30 focus-visible:outline-[#6c4cb1]"
-                    : "bg-[#f7a142] text-[#1b1b3a] shadow-[#f7a142]/30 focus-visible:outline-[#f7a142]"
-              )}
+            <Link
+              href="/trademark-registration-form"
+              className="mx-auto inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/30 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] lg:mx-0"
             >
               {activeStep.cta}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -243,7 +237,7 @@ function PhoneFrame({ variant }: { variant: StepKey }) {
 
 function RegularCard() {
   return (
-    <div className="relative w-full max-w-xs rounded-[32px] border border-[#e4e5fb] bg-[#f4f2ff] p-5 text-[#1b1b3a] shadow-[0_18px_40px_-30px_rgba(43,24,77,0.6)]">
+    <div className="relative w-full max-w-xs rounded-[32px] border border-[#e4e5fb] bg-[#f4f2ff] p-5 text-[#212121] shadow-[0_18px_40px_-30px_rgba(43,24,77,0.6)]">
       <span className="absolute -top-6 left-6 rounded-full bg-white px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#6c4cb1]">
         Trademarkia
       </span>
@@ -260,8 +254,8 @@ function RegularCard() {
         <div className="flex items-center justify-between rounded-2xl bg-white px-4 py-3 shadow-[0_6px_20px_-12px_rgba(108,76,177,0.45)]">
           <div>
             <p className="text-[10px] uppercase tracking-[0.22em] text-[#6c4cb1]/70">Status</p>
-            <p className="mt-1 flex items-center gap-1 font-semibold text-[#0bbf4f]">
-              <CheckCircle2 className="h-3.5 w-3.5" />
+            <p className="mt-1 flex items-center gap-1 font-semibold text-[#6c4cb1]">
+              <CheckCircle2 className="h-3.5 w-3.5 text-[#6c4cb1]" />
               Registered
             </p>
           </div>
@@ -269,8 +263,8 @@ function RegularCard() {
         </div>
         <div className="rounded-2xl border border-dashed border-[#d7dcf1] bg-white/70 px-4 py-3">
           <p className="text-[10px] uppercase tracking-[0.2em] text-[#6c4cb1]/70">Renew By</p>
-          <p className="mt-1 text-sm text-[#1b1b3a] font-[var(--font-heading)]">6 Jun 2026</p>
-          <p className="text-[11px] font-semibold text-[#f7a142]">25 days to go</p>
+          <p className="mt-1 text-sm text-[#212121] font-[var(--font-heading)]">6 Jun 2026</p>
+          <p className="text-[11px] font-semibold text-[#6c4cb1]">25 days to go</p>
         </div>
       </div>
     </div>
@@ -279,18 +273,18 @@ function RegularCard() {
 
 function UrgentCard() {
   return (
-    <div className="relative w-full max-w-xs rounded-[32px] border border-[#f0c9cb] bg-[#fff5f5] p-5 text-[#2d0b0d] shadow-[0_18px_42px_-24px_rgba(220,60,66,0.5)]">
-      <span className="absolute -top-6 left-6 rounded-full bg-[#f2686b] px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-white">
+    <div className="relative w-full max-w-xs rounded-[32px] border border-[#d8cff7] bg-[#f4f2ff] p-5 text-[#212121] shadow-[0_18px_42px_-24px_rgba(108,76,177,0.35)]">
+      <span className="absolute -top-6 left-6 rounded-full bg-[#6c4cb1] px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-white">
         Alert
       </span>
-      <div className="flex flex-col items-center justify-center gap-3 rounded-[26px] border border-[#f4cdce] bg-[#fff0f0] px-6 py-8 text-center shadow-[0_10px_34px_-16px_rgba(242,104,107,0.55)]">
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#f9d3d4] text-[#f2686b]">
+      <div className="flex flex-col items-center justify-center gap-3 rounded-[26px] border border-[#d8cff7] bg-white px-6 py-8 text-center shadow-[0_10px_34px_-16px_rgba(108,76,177,0.4)]">
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#eee8ff] text-[#6c4cb1]">
           <AlertTriangle className="h-9 w-9" />
         </div>
-        <p className="text-base font-[var(--font-heading)] text-[#f2686b]">
+        <p className="text-base font-[var(--font-heading)] text-[#6c4cb1]">
           You&apos;re in the Grace Period
         </p>
-        <p className="text-xs text-[#914448] font-[var(--font-body)]">
+        <p className="text-xs text-[#4a4a4a] font-[var(--font-body)]">
           Submit renewal documents within 25 days to maintain protection.
         </p>
       </div>

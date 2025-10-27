@@ -6,7 +6,6 @@ import USPTO from "@/components/USPTO";
 import Use from "@/components/Use";
 import SOUExtensionHero from "@/components/SOUExtensionHero";
 import Client from "@/components/Client";
-import Attorney from "@/components/Attorney";
 import Plans from "@/components/Plans";
 import FAQ from "@/components/FAQ";
 
@@ -25,7 +24,6 @@ export default function StatementOfUsePage() {
       <Use />
       <SOUExtensionHero />
       <Client />
-      <Attorney />
       <Plans />
       <FAQ />
     </main>

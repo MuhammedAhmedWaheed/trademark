@@ -49,7 +49,7 @@ export default function CeaseAndDesistProcess() {
             </div>
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="#cease-contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3aa4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] font-[var(--font-heading)]"
               >
                 Start My Letter

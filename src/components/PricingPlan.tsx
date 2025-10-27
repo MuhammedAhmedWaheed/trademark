@@ -11,6 +11,7 @@ type Plan = {
     border: string;
     button: string;
     buttonHover: string;
+    cardBg: string;
   };
   includes: string[];
 };
@@ -23,7 +24,8 @@ const PLANS: Plan[] = [
     priceNote: "+ USPTO filing fees",
     href: "/trademark-registration-form",
     accent: {
-      border: "border-[#cfd6ff]",
+      border: "border-[#dfd8f7]",
+      cardBg: "bg-white",
       button: "bg-[#1b1b3a] text-white",
       buttonHover: "hover:brightness-110",
     },
@@ -40,8 +42,9 @@ const PLANS: Plan[] = [
     priceNote: "+ USPTO filing fees",
     href: "/trademark-registration-form",
     accent: {
-      border: "border-[#b8c6ff]",
-      button: "bg-[#5468ff] text-white",
+      border: "border-[#cabff1]",
+      cardBg: "bg-[#f8f6ff]",
+      button: "bg-[#6c4cb1] text-white",
       buttonHover: "hover:brightness-110",
     },
     includes: [
@@ -59,8 +62,9 @@ const PLANS: Plan[] = [
     priceNote: "+ USPTO filing fees",
     href: "/trademark-registration-form",
     accent: {
-      border: "border-[#ffbd94]",
-      button: "bg-[#f59a45] text-white",
+      border: "border-[#ded7f7]",
+      cardBg: "bg-white",
+      button: "bg-[#333333] text-white",
       buttonHover: "hover:brightness-110",
     },
     includes: [
@@ -75,13 +79,13 @@ const PLANS: Plan[] = [
 
 export default function PricingPlans() {
   return (
-    <section className="bg-[#23234a] py-16 text-white sm:py-20">
+    <section id="pricing" className="bg-[#f5f5f5] py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-[var(--font-heading)]">
+          <h2 className="text-3xl text-[#212121] sm:text-4xl font-[var(--font-heading)]">
             Start Protecting Your Business Today
           </h2>
-          <p className="mt-4 text-base text-[#d5dbff] sm:text-lg font-[var(--font-body)]">
+          <p className="mt-4 text-base text-[#333333] sm:text-lg font-[var(--font-body)]">
             Select the trademark registration package that matches your brand&apos;s needs. Our experienced trademark specialists and case analysts will guide you through every step with speed, accuracy, and confidence.
           </p>
         </div>
@@ -91,21 +95,21 @@ export default function PricingPlans() {
             ({ name, tagline, price, priceNote, href, accent, includes }) => (
               <div
                 key={name}
-                className={`flex h-full flex-col rounded-3xl border bg-white p-8 text-left text-[#1b1b3a] ${accent.border}`}
+                className={`flex h-full flex-col rounded-3xl border p-8 text-left text-[#212121] shadow-[0_22px_40px_-34px_rgba(108,76,177,0.35)] ${accent.border} ${accent.cardBg}`}
               >
                 <div>
-                  <h3 className="text-xl text-[#1b1b3a] font-[var(--font-heading)]">
+                  <h3 className="text-xl text-[#212121] font-[var(--font-heading)]">
                     {name}
                   </h3>
-                  <p className="mt-2 text-sm text-[#4b4b63] font-[var(--font-body)]">
+                  <p className="mt-2 text-sm text-[#333333] font-[var(--font-body)]">
                     {tagline}
                   </p>
                 </div>
                 <div className="mt-6">
-                  <div className="text-4xl text-[#1b1b3a] font-[var(--font-heading)]">
+                  <div className="text-4xl text-[#212121] font-[var(--font-heading)]">
                     {price}
                   </div>
-                  <div className="mt-1 text-xs uppercase tracking-wide text-[#6c6c85]">
+                  <div className="mt-1 text-xs uppercase tracking-wide text-[#5d5d6f]">
                     {priceNote}
                   </div>
                 </div>
@@ -116,10 +120,10 @@ export default function PricingPlans() {
                   Start {name.split(" ")[0]} Application
                 </Link>
                 <div className="mt-8 border-t border-[#e0e3ff]" />
-                <p className="mt-5 text-sm font-semibold text-[#1b1b3a]">
+                <p className="mt-5 text-sm font-semibold text-[#212121]">
                   Includes:
                 </p>
-                <ul className="mt-3 space-y-3 text-sm text-[#4b4b63] font-[var(--font-body)]">
+                <ul className="mt-3 space-y-3 text-sm text-[#333333] font-[var(--font-body)]">
                   {includes.map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#6c4cb1]" />

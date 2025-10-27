@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TrademarkMonitoringCTA() {
   return (
     <section className="relative overflow-hidden bg-[#6c4cb1] py-16 sm:py-20">
@@ -9,12 +11,12 @@ export default function TrademarkMonitoringCTA() {
         <p className="max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base font-[var(--font-body)]">
           Stay ahead of potential conflicts and safeguard your trademarks with our comprehensive monitoring service.
         </p>
-        <a
-          href="#monitoring-contact"
+        <Link
+          href="/contact"
           className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#6c4cb1] transition duration-300 hover:bg-[#F5F5F5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white font-[var(--font-heading)]"
         >
           Get Started
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -20,13 +20,12 @@ export default function FreeTrademarkCTA() {
           </div>
 
           <div className="relative flex justify-center sm:justify-end">
-            <div className="relative h-[120px] w-[260px] sm:h-[130px] sm:w-[320px]">
-              <div className="absolute -right-2 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-[#e6eaff]" />
+            <div className="relative h-[120px] w-[260px] overflow-hidden rounded-[24px] border border-[#edf0f8] shadow-[0_32px_110px_-80px_rgba(33,33,33,0.5)] sm:h-[140px] sm:w-[320px]">
               <Image
-                src="/trademarkreg1.jpg"
-                alt="Attorney team offering trademark search support"
+                src="/freetrademarklastsection.png"
+                alt="Legal Mark Experts team ready to deliver trademark search support"
                 fill
-                className="rounded-[28px] object-cover"
+                className="object-cover"
                 priority
                 unoptimized
               />

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { ChevronDown, CalendarDays } from "lucide-react";
+import Link from "next/link";
 
 export default function ExtensionOfUsePage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -153,9 +154,9 @@ export default function ExtensionOfUsePage() {
               application and how it helps you hold your rights while you
               prepare to use your mark in commerce.
             </p>
-            <button className="inline-flex items-center justify-center bg-[#6c4cb1] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5b3d9d] transition-all">
+            <Link href="/contact" className="inline-flex items-center justify-center bg-[#6c4cb1] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5b3d9d] transition-all">
               Get Started
-            </button>
+            </Link>
           </div>
 
           <div className="space-y-4">
@@ -217,56 +218,6 @@ export default function ExtensionOfUsePage() {
           >
             What’s Notice of Allowance?
           </a>
-        </div>
-      </section>
-
-      {/* ========================= SPEAK DIRECTLY TO OUR TRADEMARK ATTORNEY ========================= */}
-      <section className="relative px-6 md:px-20 pt-20 pb-10">
-        <div className="pointer-events-none absolute left-0 right-0 -top-10 h-10 bg-gradient-to-b from-transparent to-[#F5F5F5]/60 rounded-b-[50%]" />
-        <h2 className="text-center font-[var(--font-heading)] text-2xl md:text-3xl font-bold mb-8">
-          Speak Directly to Our{" "}
-          <span className="text-[#6c4cb1]">Trademark Attorney!</span>
-        </h2>
-
-        <div className="relative grid md:grid-cols-2 gap-6">
-          <div className="hidden md:block absolute -right-3 -top-6 h-10 w-10 rounded-full bg-white shadow-md grid place-items-center">
-            <CalendarDays className="h-5 w-5 text-[#6c4cb1]" />
-          </div>
-
-          <article className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm relative">
-            <span className="absolute -right-0 top-0 h-10 w-6 bg-[#6c4cb1] rounded-tr-2xl rounded-bl-2xl" />
-            <div className="flex items-center gap-4">
-              <Image
-                src="/extension3.png"
-                alt="Michael Markos"
-                width={64}
-                height={64}
-                className="rounded-full object-cover bg-[#F5F5F5]"
-              />
-              <div>
-                <h3 className="font-semibold">Michael Markos</h3>
-                <p className="text-sm text-gray-500">U.S. Licensed Attorney</p>
-              </div>
-            </div>
-            <p className="text-sm text-gray-600 mt-4">
-              Understanding your options can be hard. You can talk to one of our
-              Attorneys to understand what can work best for you.
-            </p>
-          </article>
-
-          <article className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold mb-2">
-              Schedule a Free Consultation
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Our experienced attorneys provide personalized guidance to help
-              protect your brand and make informed decisions. Book your
-              consultation today and take the next step with confidence!
-            </p>
-            <button className="inline-flex rounded-lg bg-[#f59e0b] hover:bg-[#d98806] text-white font-semibold px-5 py-2 transition-all">
-              Book Now
-            </button>
-          </article>
         </div>
       </section>
 

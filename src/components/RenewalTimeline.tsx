@@ -44,11 +44,11 @@ const STAGES: TimelineStage[] = [
     description:
       "Keep your mark active by renewing between the 5th and 6th anniversary of your original registration. We handle statements of use and maintenance filings for you.",
     badge: "Grace Period Support",
-    badgeTone: "warning",
+    badgeTone: "primary",
     callout: {
       heading: "You're in the Grace Period",
       label: "Expiration date",
-      tone: "warning",
+      tone: "primary",
     },
     cta: "Renew Now",
   },
@@ -110,18 +110,18 @@ export default function RenewalTimeline() {
   };
 
   return (
-    <section className="bg-[#f4f7ff] py-20 sm:py-24">
+    <section className="bg-white py-20 sm:py-24">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
         <header className="space-y-2 text-center">
-          <h2 className="text-3xl text-[#1b1b3a] sm:text-[2.5rem] font-[var(--font-heading)]">
+          <h2 className="text-3xl text-[#212121] sm:text-[2.5rem] font-[var(--font-heading)]">
             Stay on Track <span className="text-[#6c4cb1]">with Your Trademarks</span>
           </h2>
-          <p className="text-base text-[#4b4b63] sm:text-lg font-[var(--font-body)]">
+          <p className="text-base text-[#333333] sm:text-lg font-[var(--font-body)]">
             Trademark renewal is calculated based on the date of initial registration.
           </p>
         </header>
 
-        <div className="rounded-[36px] border border-[#e1e6f7] bg-white/95 p-6 shadow-[0_35px_70px_-45px_rgba(68,81,133,0.45)] backdrop-blur-lg sm:p-8 lg:p-12">
+        <div className="rounded-[36px] border border-[#e1e6f7] bg-white p-6 shadow-[0_35px_70px_-45px_rgba(68,81,133,0.25)] sm:p-8 lg:p-12">
           <div className="flex flex-col gap-10">
             <TimelineTrack
               activeIndex={activeIndex}
@@ -315,8 +315,8 @@ function StageDetail({ stage }: { stage: TimelineStage }) {
 
         {stage.cta && (
           <Link
-            href="/contact"
-            className="mx-auto inline-flex min-w-[140px] items-center justify-center rounded-full bg-[#f7a142] px-6 py-3 text-sm font-semibold text-[#1b1b3a] shadow-lg shadow-[#f7a142]/40 transition hover:brightness-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f7a142] sm:mx-0"
+            href="/trademark-registration-form"
+            className="mx-auto inline-flex min-w-[140px] items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/30 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:mx-0"
           >
             {stage.cta}
           </Link>
@@ -331,7 +331,7 @@ function badgeToneClass(tone: Tone) {
     case "primary":
       return "border-[#d7dcff] bg-white text-[#6c4cb1]";
     case "warning":
-      return "border-[#f9c9ce] bg-[#fff5f5] text-[#f2686b]";
+      return "border-[#daccff] bg-[#f5f2ff] text-[#6c4cb1]";
     default:
       return "border-[#d7dcf1] bg-white text-[#4b4b63]";
   }
@@ -341,9 +341,9 @@ function getToneStyles(tone: Tone) {
   switch (tone) {
     case "warning":
       return {
-        background: "#fff4f4",
-        border: "#f9c9ce",
-        text: "#f2686b",
+        background: "#f5f2ff",
+        border: "#daccff",
+        text: "#6c4cb1",
       };
     case "primary":
       return {

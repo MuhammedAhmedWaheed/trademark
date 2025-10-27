@@ -6,6 +6,7 @@ import TrademarkSavings from "../../../components/TrademarkSavings";
 import TrademarkMonitoringIncluded from "../../../components/TrademarkMonitoringIncluded";
 import TrademarkProtectionFAQ from "../../../components/TrademarkProtectionFAQ";
 import TrademarkSecureSpotCTA from "../../../components/TrademarkSecureSpotCTA";
+import PricingPlans from "@/components/PricingPlan";
 
 export const metadata: Metadata = {
   title: "Trademark Registration Services | Legal Mark Experts",
@@ -20,6 +21,7 @@ export default function TrademarkRegistrationPage() {
       <TrademarkAttorneyAdvisement />
       <TrademarkWhyChoose />
       <TrademarkSavings />
+      <PricingPlans />
       <TrademarkMonitoringIncluded />
       <TrademarkProtectionFAQ />
       <TrademarkSecureSpotCTA />

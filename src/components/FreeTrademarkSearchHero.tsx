@@ -2,7 +2,7 @@ export default function FreeTrademarkSearchHero() {
   return (
     <section className="relative overflow-hidden bg-[#f5f5f5] py-16 sm:py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(108,76,177,0.08),_transparent_55%)]" />
-      <div className="relative mx-auto flex w-full max-w-5xl flex-col items-center gap-10 px-4 text-center sm:px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#6c4cb1] font-[var(--font-heading)] sm:text-sm">
             Free Trademark Lookup
