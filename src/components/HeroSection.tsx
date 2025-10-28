@@ -151,7 +151,7 @@ export default function HeroSection() {
               Get A Free Consultation
             </Link>
             <Link
-              href="/services/trademark-registration"
+              href="/trademark-registration-form"
               className="inline-flex items-center justify-center rounded-full bg-[#333333] px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-black/25 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#333333]"
             >
               Start Your Trademark Application

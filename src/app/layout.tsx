@@ -19,7 +19,7 @@ const body = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Trademark Website",
+  title: "Legal Mark Experts",
   description: "Professional Trademark Services",
 };
 
