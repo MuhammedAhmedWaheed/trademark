@@ -18,7 +18,7 @@ export default function TrademarkOfficeActionHero() {
               service will help you file an office action response quickly and accurately.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Link href="/contact"><button
+              <Link href="/trademark-revival-form"><button
                 type="button"
                 className="inline-flex h-12 items-center justify-center rounded-[22px] bg-[#6c4cb1] px-8 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3f96] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:h-14 sm:text-base font-[var(--font-heading)]"
               >

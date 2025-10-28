@@ -139,7 +139,7 @@ export default function ExtensionOfUsePage() {
               application and how it helps you hold your rights while you
               prepare to use your mark in commerce.
             </p>
-            <Link href="/contact" className="inline-flex items-center justify-center bg-[#6c4cb1] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5b3d9d] transition-all">
+            <Link href="/trademark-revival-form" className="inline-flex items-center justify-center bg-[#6c4cb1] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5b3d9d] transition-all">
               Get Started
             </Link>
           </div>

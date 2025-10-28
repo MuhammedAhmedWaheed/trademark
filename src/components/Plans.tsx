@@ -213,7 +213,7 @@ export default function Plans() {
                       </div>
                     </div>
 
-                    <Link href="/contact"><button
+                    <Link href="/trademark-revival-form"><button
                       className={`mt-5 w-full rounded-lg px-4 py-2.5 text-sm font-semibold transition ${
                         plan.recommended
                           ? "bg-white text-[#6c4cb1]"

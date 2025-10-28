@@ -24,7 +24,7 @@ export default function RenewalPromptCTA() {
               Stay ahead of maintenance deadlines and ensure your registration remains enforceable with proactive renewal support from our specialists.
             </p>
             <Link
-              href="/contact"
+              href="/trademark-revival-form"
               className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/30 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1]"
             >
               Get Started

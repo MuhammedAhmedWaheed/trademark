@@ -21,7 +21,7 @@ export default function SOUExtensionHero() {
           Allowance.
         </p>
 
-        <Link href="/contact"><button className="bg-[#6c4cb1] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all">
+        <Link href="/trademark-revival-form"><button className="bg-[#6c4cb1] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all">
           File SOU Extension Now
         </button></Link>
       </div>

@@ -16,14 +16,14 @@ const PATHS: RevivalPath[] = [
     description:
       "Your trademark might be abandoned, but it is not too late. File a complete response plus a Petition to Revive within the two-month grace period.",
     ctaLabel: "Revive Your Trademark",
-    href: "/contact",
+    href: "/trademark-revival-form",
   },
   {
     title: "Missed the Revival Window?",
     description:
       "If the revival grace period has passed, a fresh USPTO application safeguards your brand and restores nationwide protection.",
     ctaLabel: "Refile Trademark",
-    href: "/contact",
+    href: "/trademark-revival-form",
   },
 ];
 
