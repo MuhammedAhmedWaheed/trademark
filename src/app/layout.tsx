@@ -21,6 +21,9 @@ const body = Open_Sans({
 export const metadata: Metadata = {
   title: "Legal Mark Experts",
   description: "Professional Trademark Services",
+  icons:{
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
