@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ComprehensiveTrademarkOverview() {
   return (
@@ -10,7 +11,7 @@ export default function ComprehensiveTrademarkOverview() {
           <div className="absolute left-6 top-2 h-20 w-20 rounded-full bg-white/40 blur-2xl" />
           <div className="relative overflow-hidden rounded-[32px] shadow-[0_32px_90px_-60px_rgba(33,33,33,0.55)]">
             <Image
-              src="/comprehensive.png"
+              src="/new2.png"
               alt="Comprehensive trademark search dashboard preview"
               width={720}
               height={480}
@@ -36,12 +37,13 @@ export default function ComprehensiveTrademarkOverview() {
             attorney commentary so you can file with confidence or pivot your
             brand strategy.
           </p>
+          <Link href="/contact">
           <button
             type="button"
             className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-7 py-3 text-sm font-semibold text-white shadow-[0_18px_40px_-28px_rgba(33,33,33,0.65)] transition hover:bg-[#5a3aa4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:text-base font-[var(--font-heading)]"
           >
             Get Search Report
-          </button>
+          </button></Link>
         </div>
       </div>
     </section>

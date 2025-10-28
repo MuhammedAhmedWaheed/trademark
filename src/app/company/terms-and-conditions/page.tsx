@@ -164,31 +164,30 @@ export default function EngagementAgreementPage() {
       </section>
 
       <section className="border-b border-[#ede7f6] bg-[#f7f5fb]">
-        <div className="mx-auto flex max-w-5xl flex-col gap-6 px-5 py-12 sm:px-8 lg:flex-row lg:px-10">
-          <div className="max-w-lg lg:w-72">
-            <h2 className="uppercase tracking-wide text-xs font-semibold text-[#6c4cb1]">Navigate</h2>
-            <p className="mt-3 text-sm text-[#4b4b63]">
-              Jump to any section for fast answers about scope, billing, responsibilities, and how we work together.
-            </p>
+        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 lg:px-10">
+          <div className="text-center">
+            <h2 className="text-sm font-semibold tracking-wide text-[#6c4cb1] sm:text-base">
+              Navigate This Agreement
+            </h2>
           </div>
-          <div className="grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:gap-6">
             {navHighlights.map((item) => {
               const Icon = item.icon;
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="group flex h-full items-start gap-4 rounded-2xl border border-[#ded8f4] bg-white p-5 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-[#c9bef0] hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1]"
+                  className="group flex h-full flex-col gap-4 rounded-2xl border border-[#ded8f4] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#c9bef0] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1]"
                 >
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#f3efff] text-[#6c4cb1] transition group-hover:bg-[#6c4cb1] group-hover:text-white">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
-                  <div className="flex-1">
+                  <div className="flex flex-1 flex-col gap-2 text-left">
                     <div className="flex items-start justify-between gap-3">
                       <span className="text-base font-semibold text-[#212121]">{item.label}</span>
                       <ArrowUpRight className="h-4 w-4 shrink-0 text-[#a79ae0] transition group-hover:text-[#6c4cb1]" aria-hidden="true" />
                     </div>
-                    <p className="mt-2 text-sm text-[#4b4b63]">{item.detail}</p>
+                    <p className="text-sm leading-relaxed text-[#4b4b63]">{item.detail}</p>
                   </div>
                 </Link>
               );

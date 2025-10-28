@@ -8,25 +8,25 @@ const PURPLE = "#6c4cb1";
 type Item = { title: string; image: string; text: string };
 
 const GOODS: Item[] = [
-  { title: "Product Labels / Tags", image: "/use1.png", text: "Labels or tags attached to the product showing the trademark prominently displayed." },
-  { title: "Product Packaging", image: "/use2.png", text: "Your product boxes, wrappers, or containers with the trademark prominently displayed." },
-  { title: "Product Images", image: "/use3.png", text: "Photos of the product itself with the trademark visible." },
-  { title: "Advertising Materials", image: "/use4.png", text: "Flyers, brochures, or other promotional materials featuring the trademark." },
-  { title: "Online & Digital Materials", image: "/use5.png", text: "Screenshots of Websites, e-commerce listings, mobile apps, social media profiles, digital advertisements, email campaigns, online videos, web-based presentations." },
-  { title: "Shipping Documents", image: "/use6.png", text: "Shipping invoices, packing slips, or other documents related to the sale of the product, with the trademark visible." },
-  { title: "Invoices / Sales Receipts", image: "/use7.png", text: "Proof of sales transactions (invoices or receipts) that display the trademark." },
-  { title: "General Evidence", image: "/use8.png", text: "Includes business cards, advertisements, brochures, trade show displays, social media posts, email signatures, press releases, news mentions, signage, branded stationery, contracts." },
+  { title: "Product Labels / Tags", image: "/statement2.jpeg", text: "Labels or tags attached to the product showing the trademark prominently displayed." },
+  { title: "Product Packaging", image: "/statement3.jpeg", text: "Your product boxes, wrappers, or containers with the trademark prominently displayed." },
+  { title: "Product Images", image: "/statement4.png", text: "Photos of the product itself with the trademark visible." },
+  { title: "Advertising Materials", image: "/statement5.png", text: "Flyers, brochures, or other promotional materials featuring the trademark." },
+  { title: "Online & Digital Materials", image: "/statement6.png", text: "Screenshots of Websites, e-commerce listings, mobile apps, social media profiles, digital advertisements, email campaigns, online videos, web-based presentations." },
+  { title: "Shipping Documents", image: "/statement7.png", text: "Shipping invoices, packing slips, or other documents related to the sale of the product, with the trademark visible." },
+  { title: "Invoices / Sales Receipts", image: "/statement8.png", text: "Proof of sales transactions (invoices or receipts) that display the trademark." },
+  { title: "General Evidence", image: "/statement9.png", text: "Includes business cards, advertisements, brochures, trade show displays, social media posts, email signatures, press releases, news mentions, signage, branded stationery, contracts." },
 ];
 
 const SERVICES: Item[] = [
-  { title: "Marketing Materials", image: "/use9.png", text: "The trademark should be visible in ads, brochures, flyers, videos, and press releases, either in the headline, logo, or product/service description." },
-  { title: "Online Presence", image: "/use10.png", text: "The trademark must appear on websites, social media posts, email campaigns, or digital platforms, preferably in headers, banners, or alongside service descriptions." },
-  { title: "Physical Displays", image: "/use11.png", text: "Signage, event materials, and trade show exhibits should clearly feature the trademark, such as on banners, posters, or booth setups." },
-  { title: "Service Documentation", image: "/use12.png", text: "Contracts, invoices, and reports must include the trademark, either in the header, footer, or branding." },
-  { title: "Client Feedback", image: "/use13.png", text: "Testimonials and reviews must mention or include the trademark when referring to the service." },
-  { title: "Business Identification", image: "/use14.png", text: "Business cards, letterheads, or stationery must display the trademark in a visible position." },
-  { title: "Promotional Events", image: "/use15.png", text: "Event programs, banners, posters, tickets, booth signage, and branded merchandise must prominently display the trademark to clearly associate it with the services." },
-  { title: "General Evidence", image: "/use16.png", text: "News articles, online features, interviews, press mentions, and media reviews must explicitly display the trademark in connection with the services." },
+  { title: "Marketing Materials", image: "/serviceuse1.png", text: "The trademark should be visible in ads, brochures, flyers, videos, and press releases, either in the headline, logo, or product/service description." },
+  { title: "Online Presence", image: "/serviceuse2.png", text: "The trademark must appear on websites, social media posts, email campaigns, or digital platforms, preferably in headers, banners, or alongside service descriptions." },
+  { title: "Physical Displays", image: "/serviceuse3.png", text: "Signage, event materials, and trade show exhibits should clearly feature the trademark, such as on banners, posters, or booth setups." },
+  { title: "Service Documentation", image: "/serviceuse4.png", text: "Contracts, invoices, and reports must include the trademark, either in the header, footer, or branding." },
+  { title: "Client Feedback", image: "/serviceuse5.png", text: "Testimonials and reviews must mention or include the trademark when referring to the service." },
+  { title: "Business Identification", image: "/serviceuse6.png", text: "Business cards, letterheads, or stationery must display the trademark in a visible position." },
+  { title: "Promotional Events", image: "/serviceuse7.png", text: "Event programs, banners, posters, tickets, booth signage, and branded merchandise must prominently display the trademark to clearly associate it with the services." },
+  { title: "General Evidence", image: "/serviceuse8.png", text: "News articles, online features, interviews, press mentions, and media reviews must explicitly display the trademark in connection with the services." },
 ];
 
 export default function Use() {

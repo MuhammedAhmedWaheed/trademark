@@ -145,13 +145,13 @@ export default function HeroSection() {
 
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/services/trademark-registration"
+              href="services/trademark-consultancy"
               className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#212121] shadow-md shadow-black/5 transition hover:bg-[#f1eefc]"
             >
-              Explore Our Services
+              Get A Free Consultation
             </Link>
             <Link
-              href="/trademark-registration-form"
+              href="/services/trademark-registration"
               className="inline-flex items-center justify-center rounded-full bg-[#333333] px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-black/25 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#333333]"
             >
               Start Your Trademark Application

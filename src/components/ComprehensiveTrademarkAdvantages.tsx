@@ -41,7 +41,7 @@ export default function ComprehensiveTrademarkAdvantages() {
           <div className="relative w-full max-w-md">
             <div className="relative aspect-square overflow-hidden rounded-[32px]">
               <Image
-                src="/keyadvantages.png"
+                src="/new3.png"
                 alt="Key advantages visualization"
                 fill
                 className="object-contain"

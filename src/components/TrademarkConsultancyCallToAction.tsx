@@ -62,7 +62,7 @@ export default function TrademarkConsultancyCallToAction() {
       }
 
       setStatus("success");
-      setFeedback("Thanks! Weâ€™ll email you shortly to schedule your consultation.");
+      setFeedback("Thanks for submitting the form, our senior case analyst will reach you out soon.");
       form.reset();
     } catch (error) {
       console.error("Failed to submit consultancy request", error);
@@ -251,6 +251,16 @@ export default function TrademarkConsultancyCallToAction() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

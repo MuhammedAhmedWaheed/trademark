@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const infoCards = [
   {
     title: "Enhance Chances",
@@ -70,13 +72,13 @@ export default function TrademarkConsultancyOverview() {
             through identifying risks so you can take confident next steps.
           </p>
           <div>
-            <a
-              href="#search"
+            <Link
+              href="/services/free-trademark-search"
               className="group inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3aa4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] font-[var(--font-heading)]"
             >
               Trademark Search
               <span className="ml-2 h-0.5 w-6 origin-left scale-x-0 bg-white transition-transform duration-300 group-hover:scale-x-100" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="grid w-full gap-6 sm:grid-cols-2 lg:max-w-xl">

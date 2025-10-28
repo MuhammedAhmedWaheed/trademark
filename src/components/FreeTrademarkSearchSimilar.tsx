@@ -8,7 +8,7 @@ export default function FreeTrademarkSearchSimilar() {
           <div className="relative w-full max-w-[560px]">
             <div className="relative aspect-[1120/928] overflow-hidden rounded-[36px]">
               <Image
-                src="/freetrademark3.png"
+                src="/new1.png"
                 alt="Competitor trademark search workflow showcasing filings"
                 fill
                 className="object-cover"

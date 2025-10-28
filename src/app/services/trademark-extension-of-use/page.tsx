@@ -106,7 +106,8 @@ export default function ExtensionOfUsePage() {
 
         <div className="relative md:w-1/2 flex justify-center">
           <Image
-            src="/extension1.png"
+            src="/statement10
+            .png"
             alt="Extension of Use"
             width={420}
             height={420}
@@ -196,12 +197,6 @@ export default function ExtensionOfUsePage() {
             you have already started using the mark, you must file a Statement
             of Use instead of an extension.
           </p>
-          <a
-            href="#"
-            className="text-[#6c4cb1] underline mt-4 inline-block font-medium hover:text-[#5b3d9d]"
-          >
-            What’s Notice of Allowance?
-          </a>
         </div>
       </section>
 

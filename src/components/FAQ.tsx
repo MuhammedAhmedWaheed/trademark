@@ -74,7 +74,7 @@ const FAQ_ITEMS: FAQItem[] = [
 
 export default function FAQ({ faqs }: FAQProps) {
   const data = Array.isArray(faqs) && faqs.length ? faqs : FAQ_ITEMS;
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   if (!data.length) return null;
 
@@ -96,7 +96,7 @@ export default function FAQ({ faqs }: FAQProps) {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2">
+        <div className="mt-12 grid items-start gap-4 sm:grid-cols-2">
           {data.map((item, index) => {
             const isOpen = openIndex === index;
             return (
@@ -138,7 +138,7 @@ export default function FAQ({ faqs }: FAQProps) {
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-3 text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-[#6c4cb1]">
+          <span className="text-[14px] font-semibold uppercase tracking-[0.30em] text-[#6c4cb1]">
             Still Have Questions?
           </span>
           <Link

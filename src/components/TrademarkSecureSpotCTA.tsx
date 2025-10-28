@@ -24,7 +24,7 @@ export default function TrademarkSecureSpotCTA() {
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#6c4cb1] shadow-lg shadow-black/10 transition hover:translate-x-[2px] hover:shadow-[0_18px_35px_-20px_rgba(0,0,0,0.28)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-6"
+            className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#6c4cb1] shadow-lg shadow-black/10 transition hover:translate-x-[2px] hover:shadow-[0_18px_35px_-20px_rgba(0,0,0,0.28)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-7"
           >
             Get Started
             <ArrowUpRight className="h-4 w-4" strokeWidth={2} />

@@ -115,8 +115,8 @@ export default function Testimonials() {
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-xs text-[#6c4cb1] font-semibold uppercase tracking-[0.22em] shadow-[0_12px_24px_-18px_rgba(108,76,177,0.65)]">
-            <BadgeCheck className="h-3.5 w-3.5" />
-            Customer Stories
+            <BadgeCheck className="h-7 w-7" />
+            <p className="text-[14px]">Customer Feedback</p>
           </div>
           <h2 className="mt-6 text-[2rem] font-semibold text-[#212121] sm:text-[2.5rem] font-[var(--font-heading)]">
             See What Our Customers Think About Us

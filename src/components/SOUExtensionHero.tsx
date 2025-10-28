@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SOUExtensionHero() {
   return (
@@ -20,15 +21,15 @@ export default function SOUExtensionHero() {
           Allowance.
         </p>
 
-        <button className="bg-[#6c4cb1] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all">
+        <Link href="/contact"><button className="bg-[#6c4cb1] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all">
           File SOU Extension Now
-        </button>
+        </button></Link>
       </div>
 
       {/* Right Image Section */}
       <div className="relative md:w-1/2 flex justify-center">
         <Image
-          src="/extension1.png"
+          src="/statement10.png"
           alt="Not Started Image"
           width={420}
           height={420}

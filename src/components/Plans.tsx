@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 /* Theme */
@@ -212,7 +213,7 @@ export default function Plans() {
                       </div>
                     </div>
 
-                    <button
+                    <Link href="/contact"><button
                       className={`mt-5 w-full rounded-lg px-4 py-2.5 text-sm font-semibold transition ${
                         plan.recommended
                           ? "bg-white text-[#6c4cb1]"
@@ -221,6 +222,7 @@ export default function Plans() {
                     >
                       Get Started
                     </button>
+                    </Link>
                   </div>
 
                   {/* Perks */}

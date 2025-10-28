@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const steps = [
   {
     number: "01",
@@ -61,12 +63,12 @@ export default function TrademarkMonitoringSteps() {
             ))}
           </ol>
           <div className="mt-10 flex justify-center">
-            <a
-              href="#monitoring-contact"
+            <Link
+              href="/trademark-registration-form"
               className="inline-flex w-full max-w-sm items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3aa4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] font-[var(--font-heading)]"
             >
               Secure Your Brand Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

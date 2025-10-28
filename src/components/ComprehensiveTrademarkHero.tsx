@@ -48,7 +48,7 @@ export default function ComprehensiveTrademarkHero() {
           <div className="relative rounded-[40px] shadow-[0_40px_120px_-80px_rgba(33,33,33,0.55)] sm:p-8">
             <div className="relative overflow-hidden rounded-[32px]">
               <Image
-                src="/freetrademark2.png"
+                src="/new1.png"
                 alt="Comprehensive trademark search dashboard preview"
                 width={560}
                 height={520}

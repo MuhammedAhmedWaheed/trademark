@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FreeTrademarkCTA() {
   return (
@@ -14,15 +15,17 @@ export default function FreeTrademarkCTA() {
                 Get an attorney-guided search and risk analysis from Legal Mark Experts starting at just <span className="text-[#6c4cb1] font-semibold">$199</span>.
               </p>
             </div>
-            <button className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/35 transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:px-8">
-              Get Search Report
-            </button>
+            <Link href="/contact">
+              <button className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/35 transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:px-8">
+                Get Search Report
+              </button>
+            </Link>
           </div>
 
           <div className="relative flex justify-center sm:justify-end">
-            <div className="relative h-[120px] w-[260px] overflow-hidden rounded-[24px] border border-[#edf0f8] shadow-[0_32px_110px_-80px_rgba(33,33,33,0.5)] sm:h-[140px] sm:w-[320px]">
+            <div className="relative h-[140px] w-[280px] overflow-hidden rounded-[24px] border border-[#edf0f8] shadow-[0_32px_110px_-80px_rgba(33,33,33,0.5)] sm:h-[160px] sm:w-[340px] lg:h-[180px] lg:w-[380px]">
               <Image
-                src="/freetrademarklastsection.png"
+                src="/employee.png"
                 alt="Legal Mark Experts team ready to deliver trademark search support"
                 fill
                 className="object-cover"

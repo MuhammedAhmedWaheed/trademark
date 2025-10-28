@@ -93,7 +93,7 @@ function PrimaryTile() {
           </p>
           <Link
             href="/trademark-registration-form"
-            className="inline-flex w-full max-w-[220px] items-center justify-center gap-2 rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/30 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1]"
+            className="inline-flex items-center justify-center gap-3 rounded-full bg-[#6c4cb1] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/30 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] whitespace-nowrap"
           >
             Register your trademark
             <ArrowRight className="h-4 w-4" />

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TrademarkOfficeActionSteps() {
   return (
@@ -42,12 +43,13 @@ export default function TrademarkOfficeActionSteps() {
             />
           </div>
           <div>
+            <Link href="/contact">
             <button
               type="button"
               className="inline-flex h-12 items-center justify-center rounded-[22px] bg-[#6c4cb1] px-8 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3f96] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:h-14 sm:text-base font-[var(--font-heading)]"
             >
               Start Responding to Your Office Action
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

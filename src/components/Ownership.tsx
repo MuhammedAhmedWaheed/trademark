@@ -77,7 +77,7 @@ export default function Ownership() {
       {/* Right Image */}
       <div className="relative md:w-1/2 flex justify-center">
         <Image
-          src="/ownership.png"
+          src="/ownership.jpg"
           alt="Trademark Ownership Transfer"
           width={450}
           height={450}

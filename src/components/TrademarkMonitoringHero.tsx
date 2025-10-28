@@ -32,47 +32,14 @@ export default function TrademarkMonitoringHero() {
               with our customizable watch services driven by attorney oversight.
             </p>
           </div>
-          <form className="flex flex-col gap-3 sm:flex-row sm:items-center">
-            <label htmlFor="monitoring-mark-name" className="sr-only">
-              Enter your mark name
-            </label>
-            <div className="relative flex-1">
-              <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#9e9e9e]">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-5 w-5"
-                  aria-hidden="true"
-                >
-                  <circle
-                    cx="11"
-                    cy="11"
-                    r="6"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                  />
-                  <path
-                    d="m16 16 4 4"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </span>
-              <input
-                id="monitoring-mark-name"
-                type="text"
-                placeholder="Enter your mark name..."
-                className="h-12 w-full rounded-full border border-[#E0E0E0] px-11 text-sm text-[#212121] placeholder:text-[#9e9e9e] focus:border-[#6c4cb1] focus:outline-none focus:ring-2 focus:ring-[#6c4cb1]/30 sm:h-14 sm:text-base font-[var(--font-body)]"
-              />
-            </div>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <button
               type="button"
               className="inline-flex h-12 w-full items-center justify-center rounded-full bg-[#6c4cb1] px-7 text-sm font-semibold text-white transition duration-300 hover:bg-[#5a3aa4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:h-14 sm:w-auto sm:px-8 sm:text-base font-[var(--font-heading)]"
             >
               Get Started
             </button>
-          </form>
+          </div>
           <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
             {trustPoints.map((item) => (
               <div

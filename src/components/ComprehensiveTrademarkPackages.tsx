@@ -1,4 +1,5 @@
 import { CheckCircle2, Globe2, Layers3, Search } from "lucide-react";
+import Link from "next/link";
 
 type PackageFeature = {
   title: string;
@@ -154,7 +155,7 @@ function PackageCard({ item }: { item: PackageItem }) {
       </ul>
 
       <div className="mt-auto">
-        <button
+        <Link href="/contact"><button
           type="button"
           className={`inline-flex w-full items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 font-[var(--font-heading)] ${
             isFeatured
@@ -163,7 +164,7 @@ function PackageCard({ item }: { item: PackageItem }) {
           }`}
         >
           Get Started
-        </button>
+        </button></Link>
       </div>
     </article>
   );

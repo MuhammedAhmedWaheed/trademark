@@ -134,13 +134,12 @@ export default function RenewalServicesShowcase() {
                     <button
                       type="button"
                       onClick={() => handleActivate(index)}
-                      className={cn(
-                        "relative flex w-full items-center gap-3 rounded-full border px-4 py-3 text-left transition duration-200",
-                        "border-[#d7dcf1] bg-white shadow-sm shadow-black/5 hover:border-[#b8c3ef]",
-                        isActive
-                          ? "border-transparent bg-[#6c4cb1] text-white shadow-[0_12px_30px_-18px_rgba(108,76,177,0.9)]"
-                          : "text-[#1b1b3a]"
-                      )}
+                    className={cn(
+                      "relative flex w-full items-center gap-3 rounded-full border px-4 py-3 text-left transition duration-200 shadow-sm shadow-black/5",
+                      isActive
+                        ? "border-transparent bg-[#6c4cb1] text-white shadow-[0_12px_30px_-18px_rgba(108,76,177,0.9)] hover:border-transparent"
+                        : "border-[#d7dcf1] bg-white text-[#1b1b3a] hover:border-[#b8c3ef]"
+                    )}
                     >
                       <span
                         className={cn(

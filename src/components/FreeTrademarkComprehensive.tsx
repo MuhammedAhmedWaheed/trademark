@@ -15,7 +15,7 @@ export default function FreeTrademarkComprehensive() {
           <div className="w-full max-w-[420px]">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[32px] shadow-[0_42px_120px_-78px_rgba(33,33,33,0.45)]">
               <Image
-                src="/freetrademark2.png"
+                src="/new1.png"
                 alt="Attorney reviewing comprehensive trademark search matches"
                 fill
                 className="object-cover"
@@ -47,7 +47,7 @@ export default function FreeTrademarkComprehensive() {
             ))}
           </ul>
 
-          <Link href="/comprehensive-trademark-search">
+          <Link href="/services/comprehensive-trademark-search">
             <button className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/35 transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:px-10 sm:py-3.5">
               Comprehensive Search
             </button>

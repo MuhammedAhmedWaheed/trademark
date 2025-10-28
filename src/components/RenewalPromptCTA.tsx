@@ -8,7 +8,7 @@ export default function RenewalPromptCTA() {
         <div className="flex flex-col items-center gap-6 rounded-[28px] border border-[#dad0f5] bg-gradient-to-br from-white via-[#f8f6ff] to-[#ede8ff] px-6 py-8 shadow-[0_28px_60px_-50px_rgba(61,45,120,0.45)] sm:flex-row sm:items-center sm:gap-10 sm:px-10 sm:py-10">
           <div className="relative h-36 w-36 overflow-hidden rounded-full border border-[#dad0f5]/70 bg-white shadow-[0_20px_45px_-28px_rgba(47,33,98,0.35)] sm:h-44 sm:w-44">
             <Image
-              src="/trademarkrenewal-2.png"
+              src="/new4.png"
               alt="Professional reviewing trademark documents"
               fill
               sizes="(max-width: 640px) 144px, 176px"

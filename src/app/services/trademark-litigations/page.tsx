@@ -1,33 +1,81 @@
 import Litigation from "@/components/Litigation";
 import Link from "next/link";
-import Image from "next/image";
+import type { LucideIcon } from "lucide-react";
 import {
-  Scale,
+  BadgeCheck,
   BarChart3,
   Gavel,
-} from "lucide-react"; // ✅ professional icons
+  Headset,
+  ListChecks,
+  Puzzle,
+  Scale,
+  Users,
+} from "lucide-react";
 
+type WhyCard = {
+  Icon: LucideIcon;
+  accentBg: string;
+  accentText: string;
+  title: string;
+  text: string;
+};
 
-const WHY_CARDS = [
-  { icon: "/icon1.png", title: "Led by Trademark Attorneys", text: "All services are reviewed and supported by licensed trademark attorneys with real-world legal experience." },
-  { icon: "/icon2.png", title: "Clear, Step-by-Step Process", text: "We guide you from eligibility assessment through filing with a clear, structured approach tailored to your case." },
-  { icon: "/icon3.png", title: "Fast, Personalized Support", text: "Get direct guidance from our experts—no generic answers, just support focused on your needs." },
-  { icon: "/icon4.png", title: "All-in-One Platform", text: "Search, file, monitor, and enforce—all from a single streamlined system built for entrepreneurs." },
-  { icon: "/icon5.png", title: "Transparent, No Hidden Fees", text: "No surprises—our pricing is fixed, clear, and fully disclosed upfront." },
-  { icon: "/icon6.png", title: "Trusted by Thousands", text: "Join thousands of U.S. business owners who rely on Legal Mark Expert to protect and enforce their trademarks." },
+const WHY_CARDS: WhyCard[] = [
+  {
+    Icon: Gavel,
+    accentBg: "bg-[#ebe7ff]",
+    accentText: "text-[#5f42c0]",
+    title: "Led by Trademark Attorneys",
+    text: "All services are reviewed and supported by licensed trademark attorneys with real-world legal experience.",
+  },
+  {
+    Icon: ListChecks,
+    accentBg: "bg-[#ffe9e0]",
+    accentText: "text-[#d1633d]",
+    title: "Clear, Step-by-Step Process",
+    text: "We guide you from eligibility assessment through filing with a clear, structured approach tailored to your case.",
+  },
+  {
+    Icon: Headset,
+    accentBg: "bg-[#e3f1ff]",
+    accentText: "text-[#2e77cc]",
+    title: "Fast, Personalized Support",
+    text: "Get direct guidance from our experts&mdash;no generic answers, just support focused on your needs.",
+  },
+  {
+    Icon: Puzzle,
+    accentBg: "bg-[#ffe9f3]",
+    accentText: "text-[#d14a8a]",
+    title: "All-in-One Platform",
+    text: "Search, file, monitor, and enforce&mdash;all from a single streamlined system built for entrepreneurs.",
+  },
+  {
+    Icon: BadgeCheck,
+    accentBg: "bg-[#e8f7f0]",
+    accentText: "text-[#2c9e66]",
+    title: "Transparent, No Hidden Fees",
+    text: "No surprises&mdash;our pricing is fixed, clear, and fully disclosed upfront.",
+  },
+  {
+    Icon: Users,
+    accentBg: "bg-[#fff2db]",
+    accentText: "text-[#cc8a2a]",
+    title: "Trusted by Thousands",
+    text: "Join thousands of U.S. business owners who rely on Legal Mark Expert to protect and enforce their trademarks.",
+  },
 ];
 
 const PLANS = [
   { step: "1", title: "Initial Legal Review", price: "$499 Flat Fee", text: "Speak with a licensed trademark attorney to evaluate your case and explore your options." },
   { step: "2", title: "Response & Negotiation", price: "$1,599 Flat Fee", text: "We prepare your legal response and pursue a fair settlement or negotiated resolution if appropriate." },
-  { step: "3", title: "Litigation Support", price: "$2,500 – $7,500 (Estimated Range)", text: "If the dispute proceeds to court, we provide complete representation and defend your rights." },
+  { step: "3", title: "Litigation Support", price: "$2,500 - $7,500 (Estimated Range)", text: "If the dispute proceeds to court, we provide complete representation and defend your rights." },
 ];
 
 const FAQS = [
-  { q: "What is trademark infringement?", a: "It’s unauthorized use of a trademark (or a confusingly similar mark) on related goods/services that is likely to cause consumer confusion about source or sponsorship." },
-  { q: "Can I stop someone from using a similar trademark?", a: "Yes. Options include a cease & desist letter, negotiation/settlement, an opposition or cancellation proceeding, or a federal lawsuit—depending on facts and timing." },
-  { q: "What if I’m accused of trademark infringement?", a: "Don’t ignore it. Speak with an attorney quickly to review your use, defenses (like fair use or priority), and options to resolve or defend the claim." },
-  { q: "What should I do if someone is using my trademark?", a: "Collect evidence (screenshots, sales pages, dates), confirm priority/registration status, and have an attorney assess and act—often starting with a targeted demand letter." },
+  { q: "What is trademark infringement?", a: "It's unauthorized use of a trademark (or a confusingly similar mark) on related goods/services that is likely to cause consumer confusion about source or sponsorship." },
+  { q: "Can I stop someone from using a similar trademark?", a: "Yes. Options include a cease & desist letter, negotiation/settlement, an opposition or cancellation proceeding, or a federal lawsuit&mdash;depending on facts and timing." },
+  { q: "What if I'm accused of trademark infringement?", a: "Don't ignore it. Speak with an attorney quickly to review your use, defenses (like fair use or priority), and options to resolve or defend the claim." },
+  { q: "What should I do if someone is using my trademark?", a: "Collect evidence (screenshots, sales pages, dates), confirm priority/registration status, and have an attorney assess and act&mdash;often starting with a targeted demand letter." },
 ];
 
 export default function LitigationPage() {
@@ -46,7 +94,7 @@ export default function LitigationPage() {
             <p className="text-[#333] text-base md:text-lg leading-relaxed">
               Trademark litigation is the process of enforcing your rights when another
               party infringes or challenges your mark. Our attorneys help you take decisive
-              action to protect your brand’s identity and reputation.
+              action to protect your brand&#39;s identity and reputation.
             </p>
           </div>
 
@@ -54,7 +102,7 @@ export default function LitigationPage() {
             {[
               {
                 title: "Confusingly Similar Trademarks",
-                desc: "When another brand uses a name, logo, or slogan too close to yours—causing consumer confusion—we step in with a clear strategy.",
+                desc: "When another brand uses a name, logo, or slogan too close to yours&mdash;causing consumer confusion&mdash;we step in with a clear strategy.",
               },
               {
                 title: "Priority of Use Disputes",
@@ -110,7 +158,7 @@ export default function LitigationPage() {
             {
               icon: <Gavel className="h-8 w-8 text-[#6c4cb1]" />,
               title: "Decide on Litigation",
-              text: "Proceed to court only when needed—our attorneys support you every step of the way.",
+              text: "Proceed to court only when needed&mdash;our attorneys support you every step of the way.",
             },
           ].map((s, i) => (
             <div key={i} className="flex flex-col items-center text-center">
@@ -164,18 +212,25 @@ export default function LitigationPage() {
         </h2>
 
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {WHY_CARDS.map((card, i) => (
-            <div
-              key={i}
-              className="flex items-start gap-4 p-6 bg-[#fafafa] rounded-2xl border border-gray-100 hover:bg-[#6c4cb1] hover:text-white transition-all duration-300"
-            >
-              <Image src={card.icon} alt={card.title} width={48} height={48} className="object-contain flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold mb-2 text-base">{card.title}</h3>
-                <p className="text-sm leading-relaxed">{card.text}</p>
+          {WHY_CARDS.map((card) => {
+            const Icon = card.Icon;
+            return (
+              <div
+                key={card.title}
+                className="group flex items-start gap-4 rounded-2xl border border-gray-100 bg-[#fafafa] p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-[#6c4cb1] hover:text-white"
+              >
+                <span
+                  className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl ${card.accentBg} ${card.accentText} transition-colors duration-300 group-hover:bg-white group-hover:text-[#6c4cb1]`}
+                >
+                  <Icon className="h-6 w-6" aria-hidden="true" />
+                </span>
+                <div className="space-y-2">
+                  <h3 className="text-base font-semibold">{card.title}</h3>
+                  <p className="text-sm leading-relaxed">{card.text}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
@@ -211,7 +266,7 @@ export default function LitigationPage() {
           Protect What You have Built
         </h2>
         <p className="max-w-3xl mx-auto text-[#333] text-base md:text-lg leading-relaxed">
-          Your trademark represents your hard work, reputation, and growth. If it’s being challenged or misused, now is the time to act. With the right legal support, you can defend your brand and move forward with confidence.
+          Your trademark represents your hard work, reputation, and growth. If it&#39;s being challenged or misused, now is the time to act. With the right legal support, you can defend your brand and move forward with confidence.
         </p>
         <Link
           href="/contact"
@@ -223,3 +278,4 @@ export default function LitigationPage() {
     </main>
   );
 }
+

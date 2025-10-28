@@ -110,7 +110,7 @@ export function TrademarkIntakeForm() {
       }
 
       setSubmitStatus('success');
-      setFeedbackMessage('Thanks! We received your trademark details and will follow up shortly.');
+      setFeedbackMessage('Thanks for submitting the form, our senior case analyst will reach out to you soon');
       form.reset();
       setSelectedAssets([]);
       setShowAssetValidation(false);
@@ -277,15 +277,7 @@ export function TrademarkIntakeForm() {
 
       <div className="flex flex-col gap-3 rounded-2xl bg-[#f8f6ff] p-5 text-sm text-[#4b4b63] sm:flex-row sm:items-center sm:justify-between">
         <p>
-          By submitting this form you agree to our{' '}
-          <a href="/company/terms" className="text-[#6c4cb1] underline-offset-2 hover:underline">
-            Engagement Agreement
-          </a>{' '}
-          and{' '}
-          <a href="/company/privacy" className="text-[#6c4cb1] underline-offset-2 hover:underline">
-            Privacy Policy
-          </a>
-          .
+          By submitting this form you agree to our Engagement Agreement and Privacy Policy.
         </p>
         <button
           type="submit"

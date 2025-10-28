@@ -6,29 +6,27 @@ import Link from "next/link";
 const SERVICES = [
   { label: "Trademark Registration", href: "/services/trademark-registration" },
   { label: "Free Trademark Search", href: "/services/free-trademark-search" },
-  { label: "Comprehensive Trademark Search", href: "/services/comprehensive-search" },
-  { label: "Trademark Monitoring", href: "/services/monitoring" },
-  { label: "Trademark Consultancy", href: "/services/consultancy" },
-  { label: "Trademark Renewals", href: "/services/renewals" },
-  { label: "Trademark Revival", href: "/services/revival" },
-  { label: "Trademark Office Action", href: "/services/office-action" },
-  { label: "Statement of Use", href: "/services/statement-of-use" },
-  { label: "Extension of Use", href: "/services/extension-of-use" },
-  { label: "Ownership Transfer", href: "/services/ownership-transfer" },
-  { label: "Trademark Litigations", href: "/services/litigations" },
+  { label: "Comprehensive Trademark Search", href: "/services/comprehensive-trademark-search" },
+  { label: "Trademark Monitoring", href: "/services/trademark-monitoring" },
+  { label: "Trademark Consultancy", href: "/services/trademark-consultancy" },
+  { label: "Trademark Renewals", href: "/services/trademark-renewals" },
+  { label: "Trademark Revival", href: "/services/trademark-revival" },
+  { label: "Trademark Office Action", href: "/services/trademark-office-action" },
+  { label: "Statement of Use", href: "/services/trademark-statement-of-use" },
+  { label: "Extension of Use", href: "/services/trademark-extension-of-use" },
+  { label: "Ownership Transfer", href: "/services/trademark-ownership-transfer" },
+  { label: "Trademark Litigations", href: "/services/trademark-litigations" },
 ];
 
 const RESOURCES = [
-  { label: "About Us", href: "/resources/why-us" },
-  { label: "FAQs", href: "/resources/faqs" },
+  { label: "About Us", href: "/resources/about" },
   { label: "Blog", href: "/resources/blog" },
-  { label: "Trademark Categories", href: "/resources/categories" },
+  { label: "Trademark Categories", href: "/resources/trademark-categories" },
 ];
 
 const COMPANY = [
-  { label: "About Us", href: "/company/about" },
-  { label: "Terms and Conditions", href: "/company/terms" },
-  { label: "Privacy Policy", href: "/company/privacy" },
+  { label: "Terms and Conditions", href: "/company/terms-and-conditions" },
+  { label: "Privacy Policy", href: "/company/privacy-policy" },
 ];
 
 export default function SiteFooter() {
@@ -71,9 +69,6 @@ export default function SiteFooter() {
               </h3>
               <Link href="/contact" className="block text-sm text-[#4b4b63] transition hover:text-[#6c4cb1]">
                 Contact Us
-              </Link>
-              <Link href="/resources/blog" className="block text-sm text-[#4b4b63] transition hover:text-[#6c4cb1]">
-                Blog
               </Link>
             </div>
             <h3 className="text-sm uppercase tracking-wide text-[#6c4cb1] font-[var(--font-heading)] pt-2">

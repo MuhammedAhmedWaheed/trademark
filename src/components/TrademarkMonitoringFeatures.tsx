@@ -103,7 +103,7 @@ export default function TrademarkMonitoringFeatures() {
         <div className="relative flex w-full max-w-xl flex-col gap-6">
           <div className="relative overflow-hidden rounded-[36px] shadow-[0_40px_120px_-80px_rgba(33,33,33,0.7)]">
             <Image
-              src="/trademark-monitoring3.png"
+              src="/monitoring.png"
               alt="Illustration of brand guardianship in progress"
               width={520}
               height={520}

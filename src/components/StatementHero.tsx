@@ -64,7 +64,7 @@ export default function StatementHero() {
       {/* Right Image Section */}
       <div className="relative md:w-1/2 flex justify-center">
         <Image
-          src="/extension4.png"
+          src="/statement1.png"
           alt="Statement of Use Hero"
           width={420}
           height={420}

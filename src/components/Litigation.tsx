@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Litigation() {
@@ -21,9 +21,9 @@ export default function Litigation() {
           attorney-backed warning.
         </p>
 
-        <button className="bg-[#6c4cb1] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all shadow-md">
+        <Link href="/contact"><button className="bg-[#6c4cb1] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#5b3d9d] transition-all shadow-md">
           Start Now
-        </button>
+        </button></Link> 
 
         {/* Ratings Section */}
         <div className="flex flex-wrap gap-6 mt-8">
@@ -75,7 +75,7 @@ export default function Litigation() {
       {/* Right Image */}
       <div className="relative md:w-1/2 flex justify-center">
         <Image
-          src="/litigation1.png"
+          src="/ligitation1.png"
           alt="Litigation Support"
           width={420}
           height={420}
