@@ -4,6 +4,8 @@ import { Montserrat, Open_Sans } from "next/font/google";
 import Navbar from '../components/Navbar';
 import SiteFooter from '../components/SiteFooter';
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
+
 
 const heading = Montserrat({
   subsets: ["latin"],
@@ -34,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <GoogleAnalytics gaId="G-58Q6N6W100" />
+        <GoogleTagManager gtmId="GTM-NPVWDSF5" />
         <SiteFooter />
       </body>
     </html>
