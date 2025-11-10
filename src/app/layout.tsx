@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   description: "Professional Trademark Services",
   icons:{
     icon: "/favicon.ico"
+  },
+  verification:{
+    google: "oi4sm0OqyD3B_0LUL6EfvbdGj0Frji9LAF_Usjc-iT4"
   }
 };
 
