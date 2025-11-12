@@ -17,34 +17,38 @@ export default function AboutPage(): JSX.Element {
             </header>
 
             <div className="space-y-6">
+              <h1 className="text-2xl font-[var(--font-heading)] tracking-tight text-[#212121] md:text-[25px]">
+                Our Story: Making Brand Protection Accessible to All
+              </h1>
               <p>
-                <span className="font-semibold">Legal Mark Experts</span> is a modern trademark and
-                brand-protection platform for founders, small businesses, and law firms. We combine
-                intuitive tools with expert guidance so you can search, file, and protect trademarks
-                with confidence—without slowing down your business.
+                <span className="font-semibold">Legal Mark Experts</span> was founded on a simple but powerful idea. Every business, from solo entrepreneurs to growing enterprises, deserves access to expert, straightforward, and affordable trademark protection. We saw firsthand how many brilliant business owners overlooked this crucial step, often because the process seemed too complex, costly, or intimidating.
+
               </p>
               <p>
-                Our data coverage spans millions of global records. Whether you’re running a quick
-                knockout search or preparing a comprehensive review, our workflows surface relevant
-                results and reduce busywork from start to finish.
+                We set out to change that. Our founders brought together a team of experienced trademark professionals, case analysts, and client support specialists to build a new kind of trademark service one that combines deep industry expertise with a streamlined, technology-driven process. We stripped away the jargon and the unnecessary hurdles, creating a clear path for anyone to protect their most valuable asset: their brand.
               </p>
-              <p>
-                Since 2009, our team and partner network have supported well over one hundred thousand
-                brand owners across more than 170 countries.
-              </p>
+             
             </div>
 
-            <SectionTitle>Our Mission</SectionTitle>
+            <SectionTitle >Our Mission: Your Trusted Partner in Brand Security</SectionTitle>
             <p className="mt-3">
-              Empower brand owners with accessible legal technology that streamlines trademark search,
-              filing, and post-filing management—delivering clarity, speed, and protection at every step.
+          Our mission is to empower businesses to grow with confidence by providing comprehensive, hassle-free trademark services. We believe that securing your brand identity shouldn't be an obstacle, but a strategic advantage. We are committed to safeguarding your name, logo, and slogans, ensuring your unique identity is legally protected in a competitive marketplace. We succeed when your brand is secure and your business can thrive.
             </p>
 
-            <SectionTitle>Continuous Innovation</SectionTitle>
+            <SectionTitle>Why We Are Different: The Legal Mark Experts Advantage</SectionTitle>
             <p className="mt-3">
-              We iterate relentlessly. From smarter search and monitoring to guided filing flows,
-              we’re focused on reducing friction and improving outcomes for both first-time filers
-              and experienced counsel.
+             In an industry filled with confusing options, Legal Mark Experts stands apart by focusing on what truly matters.
+              <ul>
+                <li><span className="font-semibold"> • Unwavering Expertise: </span> Our team isn't just a group of processors; we are seasoned trademark professionals. We stay ahead of changes in intellectual property law and understand the nuances of the USPTO filing process, helping you avoid common pitfalls that can delay or derail an application.
+              </li>
+                 <li><span className="font-semibold"> • A Client-Centric Approach: </span> You are more than just an application number to us. We provide dedicated, personalized support to every client. Whether you have a simple question or need guidance on a complex office action, our team is here to provide clear, actionable advice.
+              </li>
+                <li><span className="font-semibold"> • Transparency and Integrity: </span> We believe in honest, straightforward service. That’s why we offer transparent, flat-fee pricing with no hidden costs. You’ll know exactly what you’re paying for from the very beginning.
+              </li>
+                 <li><span className="font-semibold"> • Efficiency Through Innovation: </span> We leverage a smart, streamlined online process to make trademark registration as efficient as possible. This allows us to deliver expert service quickly and affordably, without sacrificing quality or attention to detail.
+
+              </li>
+              </ul>
             </p>
 
             <SectionTitle>Headquarters</SectionTitle>
@@ -57,26 +61,24 @@ export default function AboutPage(): JSX.Element {
             </p>
 
             <address className="mt-6 not-italic leading-7">
-              440 E. Southern Avenue
-              <br />
-              Tempe, Arizona 85282
+              440 E. Southern Avenue Tempe, Arizona 85282
               <br />
               <span className="font-semibold">Tel:</span>{" "}
               <Link href="tel:+18777949511" className="hover:underline">
                 1-877-794-9511
               </Link>
               <br />
-              <span className="font-semibold">Fax:</span>{" "}
+              {/* <span className="font-semibold">Fax:</span>{" "}
               <Link href="fax:+16509892131" className="hover:underline">
                 650-989-2131
-              </Link>
-              <br />
+              </Link> */}
+             
               <span className="font-semibold">Email:</span>{" "}
               <Link
-                href="mailto:customer.service@legalmarkexperts.com"
+                href="mailto:info@legalmarkexperts.com"
                 className="font-semibold text-[#6c4cb1] hover:underline"
               >
-                customer.service@legalmarkexperts.com
+                info@legalmarkexperts.com
               </Link>
             </address>
           </article>
@@ -90,7 +92,7 @@ export default function AboutPage(): JSX.Element {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mt-10 text-xl font-[var(--font-heading)] tracking-tight text-[#212121]">
+    <h2 className="mt-10 text-xl font-[var(--font-heading)] tracking-tight text-[#212121] md:text-[25px]">
       {children}
     </h2>
   );

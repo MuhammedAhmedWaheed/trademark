@@ -3,8 +3,9 @@ import { Check } from "lucide-react";
 import Link from "next/link";
 
 const BENEFITS = [
-  "It highlights marks that may not be identical but could still trigger conflicts because of close similarity.",
-  "You gain insight into potential issues like similar names, logos, or phonetic matches before submitting to the USPTO.",
+  "Conflict Identification: We highlight marks that are not identical but still pose a threat due to close similarity, including phonetic equivalents, similar commercial impressions, and related goods/services.",
+  "Likelihood of Confusion Analysis: Gain vital insight into potential issues like similar names, logos, design marks, or phonetic matches before submission. This proactive analysis mitigates risk and prevents costly USPTO office actions.",
+  "Full Clearance Report: Our search provides the crucial intelligence you need to understand the true availability of your mark and allows our US legal counsel to craft a strategy for a successful federal trademark registration."
 ];
 
 export default function FreeTrademarkComprehensive() {
@@ -32,7 +33,7 @@ export default function FreeTrademarkComprehensive() {
               Deep USPTO Coverage
             </p>
             <h2 className="text-2xl font-semibold text-[#212121] sm:text-[2.35rem] font-[var(--font-heading)]">
-              Comprehensive USPTO trademark search
+             Beyond Identical Matches: Why a Comprehensive Search is Critical
             </h2>
           </div>
 

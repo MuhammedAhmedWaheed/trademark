@@ -16,15 +16,15 @@ export default function TrademarkAttorneyAdvisement() {
             <div className="flex-1 space-y-6">
               <div className="space-y-2">
                 <h2 className="text-2xl font-semibold text-[#212121] sm:text-[1.9rem] font-[var(--font-heading)]">
-                  Trademark Search &amp; Attorney Advisement
+                  Comprehensive Trademark Search &amp; Legal Advisement Included
                 </h2>
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#6c4cb1] sm:text-sm font-[var(--font-heading)]">
-                  Built Into Every Filing
+                  In-Depth Trademark Search
                 </p>
               </div>
 
               <p className="max-w-2xl text-sm leading-relaxed text-[#333333] sm:text-base sm:leading-7 font-[var(--font-body)]">
-                Every Legal Mark Experts application includes a comprehensive search and tailored legal briefing from trusted U.S. trademark attorneys. Know exactly where you stand before you file.
+                We conduct a comprehensive trademark search across U.S. databases to identify potential conflicts and assess the strength of your proposed mark. This is essential for a successful USPTO filing.
               </p>
 
               <Link

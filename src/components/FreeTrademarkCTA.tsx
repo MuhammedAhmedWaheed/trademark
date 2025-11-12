@@ -9,10 +9,10 @@ export default function FreeTrademarkCTA() {
           <div className="space-y-4 text-center sm:text-left">
             <div className="space-y-2">
               <h2 className="text-xl font-semibold text-[#212121] sm:text-2xl font-[var(--font-heading)]">
-                Know your <span className="text-[#6c4cb1]">trademark</span> before you file
+                Know Your Trademark Before You File: <span className="text-[#6c4cb1]">USPTO Risk Analysis</span>
               </h2>
               <p className="text-sm leading-relaxed text-[#333333] sm:text-base font-[var(--font-body)]">
-                Get an attorney-guided search and risk analysis from Legal Mark Experts starting at just <span className="text-[#6c4cb1] font-semibold">$199</span>.
+                Why spend hundreds on a USPTO filing only to face a rejection? Legal Mark Experts provides the critical intelligence you need to proceed with confidence.
               </p>
             </div>
             <Link href="/contact">

@@ -3,15 +3,21 @@ import Image from "next/image";
 const STEPS = [
   {
     number: "01",
-    title: "Upload or link your logo",
+    title: "Submit Your Mark",
     description:
-      "Drop in a high-resolution file or paste a URL so our visual search can analyze the design elements and compare against existing marks.",
+      "Enter your brand name, slogan, or phrase into our secure search form.",
   },
   {
     number: "02",
-    title: "Review intelligent matches",
+    title: "We Search the Federal Database",
     description:
-      "Filter results by classes, status, and filing dates to spot conflicts before you invest in branding or USPTO fees.",
+      "Our system performs a direct-hit search of the USPTO's federal database. This scan looks for exact matches among all registered and pending trademark applications.",
+  },
+  {
+    number: "03",
+    title: " Receive Your Results",
+    description:
+      "Within moments, you will receive a clear, easy-to-understand report outlining any identical marks we've found. This gives you a preliminary look at the landscape before you decide on your next steps.",
   },
 ];
 
@@ -26,7 +32,7 @@ export default function FreeTrademarkLogoGuide() {
               Visual Search Workflow
             </p>
             <h2 className="text-2xl font-semibold text-[#212121] sm:text-[2.35rem] font-[var(--font-heading)]">
-              How to perform a <span className="text-[#6c4cb1]">Trademark Logo</span> search
+              How Our Free  <span className="text-[#6c4cb1]">Trademark Search Works</span> 
             </h2>
           </div>
           <p className="text-sm leading-relaxed text-[#333333] sm:text-base font-[var(--font-body)]">

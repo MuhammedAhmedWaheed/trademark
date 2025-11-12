@@ -52,7 +52,7 @@ export default function SiteFooter() {
             </div>
             <div>
               <p className="font-semibold text-[#1b1b3a]">Call Us</p>
-              <p>(877) 721-4579</p>
+              <p>+1 (347) 523-4473</p>
               <p>Mon-Fri 9AM-6PM CST</p>
             </div>
           </div>

@@ -24,13 +24,14 @@ export default function TrademarkRegistrationHero() {
         <div className="flex-1 space-y-6 text-center md:max-w-2xl md:self-center lg:text-left">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#6c4cb1] sm:text-sm font-[var(--font-heading)]">
-              U.S. Trademark Registration with
+              U.S. Trademark Registration Service
             </p>
             <h1 className="text-3xl font-semibold text-[#212121] sm:text-4xl lg:text-[3rem] lg:leading-[1.1] font-[var(--font-heading)]">
-              Attorney-Assisted Filing
+              Secure Legal Ownership of Your Brand Name, Logo and Slogan
             </h1>
             <p className="mx-auto max-w-xl text-sm text-[#333333] sm:text-base sm:leading-relaxed font-[var(--font-body)] lg:mx-0 lg:text-lg">
-              Secure your trademark with video consultations from U.S. and international attorneys. We prepare your application end-to-end for maximum approval success.
+             Your brand is more than just a name; it’s your reputation, your identity, and your connection with your customers. Our Trademark Registration service provides the official legal protection you need to own and defend your brand in the marketplace. 
+
             </p>
           </div>
 
@@ -39,7 +40,7 @@ export default function TrademarkRegistrationHero() {
               href="/trademark-registration-form"
               className="inline-flex items-center justify-center rounded-full bg-[#6c4cb1] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#6c4cb1]/30 transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6c4cb1] sm:px-7 sm:py-3.5"
             >
-              Start My Application
+              Register Your Trademark Now
             </Link>
           </div>
 
@@ -63,7 +64,7 @@ export default function TrademarkRegistrationHero() {
           </div>
 
           <p className="text-xs text-[#4b4b63] font-[var(--font-body)] sm:text-sm">
-            Get consultation with a U.S. licensed attorney on every application. Government fees start at $350 per class.
+            Get consultation with a U.S. trademark experts on every application. Government fees start at $350 per class.
           </p>
         </div>
 

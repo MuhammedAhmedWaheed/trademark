@@ -5,33 +5,33 @@ import { ShieldCheck, Monitor, ClipboardCheck, ThumbsUp, BadgeCheck, Users } fro
 const FEATURES = [
   {
     Icon: ShieldCheck,
-    title: "Attorney-Led Filing",
-    description: "Work with licensed U.S. attorneys from the start of your trademark journey.",
+    title: "Nationwide Legal Ownership",
+    description: "Grants you the exclusive right to use your mark across the United States.",
   },
   {
     Icon: Monitor,
-    title: "Comprehensive Monitoring",
-    description: "Full-year monitoring keeps your brand protected from conflicting filings.",
+    title: "Powerful Legal Protection",
+    description: "Provides the legal standing to sue for trademark infringement in federal court.",
   },
   {
     Icon: ClipboardCheck,
-    title: "Application Confidence",
-    description: "Each filing includes a thorough attorney review so you can submit with certainty.",
+    title: "Deters Competitors",
+    description: "Puts the public on notice of your ownership, discouraging others from using a similar mark.",
   },
   {
     Icon: ThumbsUp,
-    title: "Trusted by Entrepreneurs",
-    description: "120,000+ business owners rely on us to safeguard and grow their brands.",
+    title: "Builds Brand Value",
+    description: "A registered trademark is a valuable business asset that can be licensed, sold, and used to build equity.",
   },
   {
     Icon: BadgeCheck,
-    title: "Trusted Since 2009",
-    description: "Over 15 years of experience guiding clients through USPTO registration.",
+    title: "Prevents Costly Disputes",
+    description: "Securing your rights early can prevent expensive rebranding efforts and legal battles down the line.",
   },
   {
     Icon: Users,
-    title: "150+ Global Attorneys",
-    description: "A worldwide network of full-time trademark attorneys on your side.",
+    title: "Establishes Legal Presumption & Priority",
+    description: "The registration creates a public record and a legal presumption of validity and your ownership right.",
   },
 ];
 
@@ -41,10 +41,10 @@ export default function TrademarkWhyChoose() {
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <header className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#6c4cb1] sm:text-sm font-[var(--font-heading)]">
-            Why Choose
+            Why it's Important
           </p>
           <h2 className="mt-2 text-2xl font-semibold text-[#212121] sm:mt-3 sm:text-4xl font-[var(--font-heading)]">
-            Legal Mark Experts for Your U.S. Trademark Registration?
+           What is a Registered Trademark and Why is it Essential?
           </h2>
           <span className="mt-4 inline-flex h-[3px] w-20 rounded-full bg-[#6c4cb1]/40 sm:w-24" />
         </header>

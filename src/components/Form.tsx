@@ -92,13 +92,13 @@ export default function Form(): JSX.Element {
           </p>
           <div className="mt-8 grid gap-4 text-sm text-white/85">
             <InfoBlock title="Call us">
-              (877) 721-4579 <span className="text-white/60">Mon–Fri, 9am‑6pm CST</span>
+              +1 (347) 523-4473 <span className="text-white/60">Mon–Fri, 9am‑6pm EST</span>
             </InfoBlock>
             <InfoBlock title="Email">
-              support@legalmarkexperts.com
+              info@legalmarkexperts.com
             </InfoBlock>
             <InfoBlock title="Visit">
-              440 E. Southern Avenue, Tempe, AZ 85282
+              971 US-202 202n nBranchburg, NJ 08876, USA
             </InfoBlock>
           </div>
         </div>

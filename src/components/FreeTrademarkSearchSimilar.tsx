@@ -24,13 +24,15 @@ export default function FreeTrademarkSearchSimilar() {
             Competitive Insights
           </p>
           <h2 className="text-2xl font-semibold text-[#212121] sm:text-[2.4rem] font-[var(--font-heading)]">
-            Search trademarks filed by <span className="text-[#6c4cb1]">competing companies</span>
+            What Our  <span className="text-[#6c4cb1]">Free Search Covers </span> 
           </h2>
           <p className="text-sm leading-relaxed text-[#333333] sm:text-base font-[var(--font-body)]">
-            Browse millions of filings to stay ahead. Track competitor registrations, renewals, and abandonments to plan smarter brand moves before conflicts hit your desk.
+            Our free trademark search is a powerful preliminary tool designed to identify clear, direct conflicts.
+
           </p>
           <p className="text-sm leading-relaxed text-[#333333] sm:text-base font-[var(--font-body)]">
-            Legal Mark Experts makes monitoring effortless with alerts and curated intel tailored to the marks and industries you care about most.
+           This search is an excellent starting point, but it's important to understand its limitations. It does not search for similar-sounding names (phonetic equivalents), variations in spelling, or unregistered "common law" trademarks.
+
           </p>
         </div>
       </div>
