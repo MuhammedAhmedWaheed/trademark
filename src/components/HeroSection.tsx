@@ -122,7 +122,7 @@ export default function HeroSection() {
         <div className="flex-1 space-y-8">
           <div className="space-y-4">
             <h1 className="text-3xl font-semibold leading-tight text-[#212121] sm:text-4xl lg:text-[2.8rem] lg:leading-[1.15] font-[var(--font-heading)]">
-               Secure Your Brand with Expert Trademark Registration
+               Secure Your Brand with Expert Trademark Registration Legal Mark Experts
             </h1>
             <p className="max-w-xl text-base text-[#333333] sm:text-lg font-[var(--font-body)]">
               Your brand is your most valuable asset. At Legal Mark Experts, we make the complex U.S. trademark filing process simple, fast, and affordable. Protect your unique name, logo, and identity with a team of dedicated professionals guiding you every step of the way.
