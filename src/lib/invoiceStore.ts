@@ -206,6 +206,7 @@ export async function createInvoiceEntry(
     description: input.description ?? "",
     status: options?.status ?? "unpaid",
     stripe_payment_intent_id: options?.stripePaymentIntentId ?? null,
+    stripe_payment_link_url: null,
   };
 
   if (options?.id) {

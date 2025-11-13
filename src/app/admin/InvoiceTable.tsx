@@ -7,6 +7,11 @@ interface InvoiceTableProps {
   invoices: Invoice[];
 }
 
+async function handleDeleteInvoice(formData: FormData) {
+  "use server";
+  await deleteInvoice(formData);
+}
+
 export default function InvoiceTable({ invoices }: InvoiceTableProps) {
   if (!invoices.length) {
     return (
@@ -73,7 +78,7 @@ export default function InvoiceTable({ invoices }: InvoiceTableProps) {
                 >
                   View invoice
                 </Link>
-                 <form action={deleteInvoice}>
+                <form action={handleDeleteInvoice}>
                   <input type="hidden" name="invoiceId" value={invoice.id} />
                   <button
                     type="submit"

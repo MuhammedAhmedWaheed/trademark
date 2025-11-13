@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import type { PaymentIntent } from "@stripe/stripe-js";
 import {
   Elements,
   PaymentElement,
@@ -68,23 +69,37 @@ function PaymentForm({
       setIsSubmitting(true);
       setMessage(null);
 
-      const { error, paymentIntent } = await stripe.confirmPayment({
+      const result = await stripe.confirmPayment({
         elements,
         confirmParams: {
           return_url: `${window.location.origin}/invoices/${invoiceId}?redirect=1`,
         },
       });
 
-      if (error) {
-        setMessage(error.message ?? "Payment failed. Please try again.");
-        onPaymentFinished(error.type === "card_error" ? "requires_payment_method" : "requires_action");
-      } else if (paymentIntent) {
-        onPaymentFinished(paymentIntent.status);
-        if (paymentIntent.status === "succeeded") {
-          setMessage("Payment successful. Thank you!");
-        } else if (paymentIntent.status === "processing") {
-          setMessage("Payment is processing. Refresh this page in a moment.");
-        }
+      if ("error" in result && result.error) {
+        setMessage(result.error.message ?? "Payment failed. Please try again.");
+        onPaymentFinished(
+          result.error.type === "card_error"
+            ? "requires_payment_method"
+            : "requires_action",
+        );
+        setIsSubmitting(false);
+        return;
+      }
+
+      const paymentIntent =
+        ("paymentIntent" in result ? result.paymentIntent : undefined) as
+          | PaymentIntent
+          | undefined;
+      if (!paymentIntent) {
+        setIsSubmitting(false);
+        return;
+      }
+      onPaymentFinished(paymentIntent.status);
+      if (paymentIntent.status === "succeeded") {
+        setMessage("Payment successful. Thank you!");
+      } else if (paymentIntent.status === "processing") {
+        setMessage("Payment is processing. Refresh this page in a moment.");
       }
 
       setIsSubmitting(false);
