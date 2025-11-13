@@ -15,30 +15,30 @@ const SERVICES: ServiceItem[] = [
   {
     title: "Trademark Registration \u2192 USPTO Filings",
     description:
-      "Secure your brand name, logo, or slogan with confidence through our efficient and affordable U.S. trademark registration services. Submit your information online and our specialists handle preparation, classification, and USPTO filing from start to finish.",
+      "We streamline the entire application and filing process, ensuring accuracy and avoiding common, costly mistakes. Submit your information online and our specialists handle preparation, classification, and USPTO filing from start to finish.",
     ctaLabel: "Explore Trademark Registration Services",
     ctaHref: "/services/trademark-registration",
   },
   {
-    title: "Trademark Filings & Legal Documents \u2192 Office Actions, Assignments & More",
+    title: "Trademark Search",
     description:
-      "Facing a USPTO Office Action or managing a transfer? We prepare and submit responses, Section 8 filings, Statements of Use, Certified Copies, and trademark assignments with precision and on-time delivery.",
-    ctaLabel: "Get Help With USPTO Filings",
-    ctaHref: "/services/trademark-office-action",
-  },
-  {
-    title: "Trademark Revival \u2192 Reclaim Abandoned Applications",
-    description:
-      "Missed a deadline or received a refusal? We assess why your application went abandoned, prepare the right petition, and guide it back onto the USPTO path so your brand regains legal protection.",
-    ctaLabel: "Revive Your Trademark",
-    ctaHref: "/services/trademark-revival",
+      "Identify potential conflicts before you file with our free and in-depth comprehensive search options. Browse millions of filings to stay ahead. Track competitor registrations, renewals, and abandonments to plan smarter brand moves before conflicts hit your desk.",
+    ctaLabel: "Verify the availability of Mark prior to submitting the filing.",
+    ctaHref: "/services/free-trademark-search",
   },
   {
     title: "Trademark Monitoring & Maintenance",
     description:
-      "Stay protected after registration with proactive USPTO monitoring and maintenance support. We notify you of conflicting filings and handle renewals, Statements of Use, and ownership updates without the stress.",
+      "Once registered, we actively monitor for infringing marks to ensure your brand remains protected.Stay protected after registration with proactive USPTO monitoring and maintenance support. We notify you of conflicting filings and handle renewals, Statements of Use, and ownership updates without the stress.",
     ctaLabel: "Protect Your Trademark Long-Term",
     ctaHref: "/services/trademark-monitoring",
+  },
+  {
+    title: "Office Action Responses & Renewals",
+    description:
+      "Our team provides expert assistance with USPTO inquiries and manages the renewal process to maintain your protection. Missed a deadline or received a refusal? We assess why your application went abandoned, prepare the right petition, and guide it back onto the USPTO path so your brand regains legal protection.",
+    ctaLabel: "Protect Your Trademark Following Submission",
+    ctaHref: "services/trademark-office-action",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function ServicesShowcase() {
               Our Services
             </p>
             <h2 className="mt-4 text-3xl text-[#212121] sm:text-4xl font-[var(--font-heading)]">
-              What Can Legal Mark Experts Do for Your Brand?
+             Our Comprehensive Trademark Services
             </h2>
           </div>
 

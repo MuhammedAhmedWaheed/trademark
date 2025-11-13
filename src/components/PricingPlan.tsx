@@ -50,7 +50,6 @@ const PLANS: Plan[] = [
     includes: [
       "Everything in the Basic Package.",
       "Personalized guidance from a senior trademark specialist.",
-      "Professionally drafted Cease & Desist Letter for use against infringers.",
       "Trademark Monitoring for three months.",
       "Priority communication and responsive support.",
     ],
@@ -71,6 +70,7 @@ const PLANS: Plan[] = [
       "Everything in the Standard Package, plus:",
       "Rush Filing with 24 hour priority processing.",
       "Extended access to our senior trademark team.",
+      "Professionally drafted Cease & Desist Letter for use against infringers.",
       "Trademark Monitoring Alerts with a free trial to catch potential infringements early.",
       "Trademark Monitoring for one year.",
     ],

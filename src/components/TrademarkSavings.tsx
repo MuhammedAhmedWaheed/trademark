@@ -3,21 +3,21 @@
 const SAVINGS_POINTS = [
   {
     number: "01",
-    title: "Lower Monitoring Costs",
+    title: "Complete Our Simple Online Form",
     description:
-      "Our $59/month brand watch includes attorney escalation when conflicts appear, saving over $300 versus market plans that charge premium legal fees.",
+      "Provide us with the necessary details about your brand, including your name or logo and the goods or services associated with it. Our intuitive form makes this quick and easy.",
   },
   {
     number: "02",
-    title: "Confidence Before You File",
+    title: "We Conduct a Search and Prepare Your Application",
     description:
-      "Each application receives a comprehensive search with attorney review, so you avoid costly USPTO refusals and delays when it matters most.",
+      "Our specialists first conduct a direct-hit search to check for identical marks. Then, we meticulously prepare your trademark application, ensuring it meets all USPTO requirements and is placed in the correct classification to minimize the risk of rejection.",
   },
   {
     number: "03",
-    title: "Attorney-Led Support",
+    title: "We File and Monitor Your Application",
     description:
-      "Legal Mark Experts keeps licensed professionals on call from intake to final filing, ensuring expert guidance without surprise hourly invoices.",
+      "Once prepared, we officially file your application with the USPTO. We then act as your correspondent, managing all communications from the USPTO, providing you with regular status updates, and keeping you informed until your trademark is successfully registered.",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function TrademarkSavings() {
             Why Legal Mark Experts
           </p>
           <h2 className="mt-3 text-2xl font-semibold text-[#212121] sm:text-4xl font-[var(--font-heading)]">
-            Saves You More
+            Our Streamlined Trademark Registration Process
           </h2>
           <span className="mt-5 inline-flex h-[3px] w-16 rounded-full bg-[#6c4cb1]/50 sm:w-20" />
         </header>
