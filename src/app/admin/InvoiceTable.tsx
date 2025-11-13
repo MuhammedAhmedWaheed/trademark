@@ -73,7 +73,7 @@ export default function InvoiceTable({ invoices }: InvoiceTableProps) {
                 >
                   View invoice
                 </Link>
-                <form action={deleteInvoice}>
+                 <form action={deleteInvoice}>
                   <input type="hidden" name="invoiceId" value={invoice.id} />
                   <button
                     type="submit"
